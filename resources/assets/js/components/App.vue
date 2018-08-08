@@ -1,45 +1,56 @@
 <template>
 	<div id="root">
-
- 
-
-<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
-  <a class="navbar-brand" href="#"> 
-    <img src="../../img/logo/logo.png" alt="logo edudu" style="width:250px;">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+        <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo.png" alt="" style="width:190px;" srcset="">
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Đăng nhập / Đăng ký</a>
+            </li> 
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Trang cá nhân
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link btn btn-outline-light" href="#">Giáo viên</a>
+            </li>
+          </ul>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-      <li>
-        <a href="#" class="btn btn-outline-success my-2 my-sm-0">Giáo viên</a>
-      </li>
-    </ul>
-    
-  </div>
-</nav>
+        </div>
+      </nav>
 		<router-view></router-view>
 	</div>
 </template>
+<script>
+	$(document).on("scroll", function(){
+		if
+      ($(document).scrollTop() > 86){
+		  $("#banner").addClass("shrink");
+		}
+		else
+		{
+			$("#banner").removeClass("shrink");
+		}
+	});
+</script>
