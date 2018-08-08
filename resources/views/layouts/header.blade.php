@@ -7,7 +7,7 @@
 				<!-- Logo -->
 				<div class="navbar-brand">
 					<a class="logo" href="{{ url('/') }}">
-						<img src="{{asset('assets/img/logo-light.png')}}" alt="logo" id="logo-header">
+						<img src="{{asset('assets/img/logo-edudu.png')}}" alt="Edudu" id="logo-header">
 					</a>
 				</div>
 				<!-- /Logo -->

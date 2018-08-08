@@ -732,7 +732,7 @@ textarea:focus {
 
 .footer-nav {
     text-align: right;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 .footer-nav li {
