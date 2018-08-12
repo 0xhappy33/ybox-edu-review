@@ -13,14 +13,14 @@ use Faker\Generator as Faker;
 |
 */
 
-/*$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
-        'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
+        'password' => bcrypt('123456'), // secret
         'remember_token' => str_random(10),
     ];
-});*/
+});
 
 // Define factory for Teacher
 $factory->define(App\Teacher::class, function (Faker $faker) {
@@ -29,7 +29,7 @@ $factory->define(App\Teacher::class, function (Faker $faker) {
     $gender = $faker->randomElement(array('m','f'));
 
     return [
-        'id' => $faker->unique()->randomDigit,
+        'id' => $faker->unique()->randomNumber,
         'name' => $faker->name,
         'description' => $description,
         'birthday' => $birthday,
@@ -55,7 +55,7 @@ $factory->define(App\Organization::class, function (Faker $faker) {
 
 
     return [
-        'id' => $faker->unique()->randomDigit,
+        'id' => $faker->unique()->randomNumber,
         'name' => $name,
         'description' => $description,
         'address' => $address,
@@ -72,11 +72,11 @@ $factory->define(App\Review::class, function (Faker $faker) {
     $description = $faker->text();
     $date = $faker->date();
     $status = $faker->randomElement(array('1','0'));
-    $voting_helpful = $faker->randomDigit;
+    $voting_helpful = $faker->randomNumber;
     $rating = $faker->numberBetween(1,5);
 
     return [
-        'id' => $faker->unique()->randomDigit,
+        'id' => $faker->unique()->randomNumber,
         'name' => $name,
         'description' => $description,
         'date' => $date,
@@ -92,29 +92,44 @@ $factory->define(App\Review::class, function (Faker $faker) {
     ];
 });
 
-// Define factory for TeacherOrganization
-$factory->define(App\Teacher::class, 'teacher_organization' , function (Faker $faker) {
-    return [
-        'id' => $faker->unique()->randomDigit,
-        'teacher_id' => function () {
-            return factory(App\Teacher::class)->create()->id;
-        },
-        'organization_id' => function () {
-            return factory(App\Organization::class)->create()->id;
-        }
-    ];
+// // Define factory for TeacherOrganization
+// $factory->define(App\Teacher::class, 'teacher_organization' , function (Faker $faker) {
+//     return [
+//         'id' => $faker->unique()->randomNumber,
+//         'teacher_id' => function () {
+//             return factory(App\Teacher::class)->create()->id;
+//         },
+//         'organization_id' => function () {
+//             return factory(App\Organization::class)->create()->id;
+//         }
+//     ];
+// });
+
+// // Define factory for UserOrganization
+// $factory->define(App\User::class, 'user_organization' , function (Faker $faker) {
+//     return [
+//         'id' => $faker->unique()->randomNumber,
+//         'user_id' => function () {
+//             return factory(App\User::class)->create()->id;
+//         },
+//         'organization_id' => function () {
+//             return factory(App\Organization::class)->create()->id;
+//         }
+//     ];
+// });
+
+$organizations = App\Organization::all();
+
+// Populate the pivot table
+App\Teacher::all()->each(function ($teacher) use ($organizations) { 
+    $teacher->organizations()->attach(
+        $organizations->random(rand(1, 3))->pluck('id')->toArray()
+    ); 
 });
 
-// Define factory for UserOrganization
-$factory->define(App\User::class, 'user_organization' , function (Faker $faker) {
-    return [
-        'id' => $faker->unique()->randomDigit,
-        'user_id' => function () {
-            return factory(App\User::class)->create()->id;
-        },
-        'organization_id' => function () {
-            return factory(App\Organization::class)->create()->id;
-        }
-    ];
+// Populate the pivot table
+App\User::all()->each(function ($user) use ($organizations) { 
+    $user->organizations()->attach(
+        $organizations->random(rand(1, 3))->pluck('id')->toArray()
+    ); 
 });
-

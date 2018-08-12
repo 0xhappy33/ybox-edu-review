@@ -13,7 +13,7 @@ class CreateTeacherOrganizationTable extends Migration
      */
     public function up()
     {
-        Schema::create('teacher_organization', function (Blueprint $table) {
+        Schema::create('organization_teacher', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('teacher_id');
             $table->unsignedInteger('organization_id');
