@@ -25,7 +25,7 @@ class TeacherController extends Controller
      */
     public function create()
     {
-        //
+        return view('testapi');
     }
 
     /**
@@ -37,6 +37,20 @@ class TeacherController extends Controller
     public function store(Request $request)
     {
        
+        $teacher = Teacher::create([ 
+            'name'          => $request->name,
+            'description'   => $request->description,
+            'birthday'      => $request->birthday,
+            'gender'        => $request->gender,
+            'address'       => $request->address,
+            'phone'         => $request->phone,
+            'specialize'    => $request->specialize,
+            'image'         => $request->image,
+            'identity_card' => $request->identity_card,
+            'email'         => $request->email,
+        ]);
+        return new TeacherResource($teacher);
+
     }
 
     /**
@@ -81,6 +95,7 @@ class TeacherController extends Controller
      */
     public function destroy($id)
     {
-       
+       $teacher = Teacher::findOrFail($id)->delete();
+       return   redirect()->route('teacher.index');
     }
 }

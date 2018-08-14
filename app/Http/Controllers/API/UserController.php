@@ -26,7 +26,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        // phương thức get dùng để hiển thị form tạo dữ liệu
+        
     }
 
     /**
@@ -37,7 +38,9 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // phương thức post dùng để gửi form lưu dữ liệu
+        
+
     }
 
     /**
