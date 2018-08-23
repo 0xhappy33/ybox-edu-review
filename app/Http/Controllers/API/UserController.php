@@ -6,6 +6,7 @@ use App\User;
 use App\Http\Resources\UserResource;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CreateUserRequest;
 
 class UserController extends Controller
 {
@@ -16,7 +17,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        return new UserResource(User::all());
+        $users = User::all();
+        return response()->json([
+            "users" => $users
+        ], 200);
     }
 
     /**
@@ -36,11 +40,14 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateUserRequest $request)
     {
         // phương thức post dùng để gửi form lưu dữ liệu
-        
-
+        die("1231321321321");
+        $user = User::create($request->only(["name", "email", "password"]));
+        return response()->json([
+            "user" => $user
+        ], 200);
     }
 
     /**
