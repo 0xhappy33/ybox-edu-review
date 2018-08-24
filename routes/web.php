@@ -10,14 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/vue', function () {
+Route::any('{all}', function () {
     return view('welcome');
-});
+})
+->where(['all' => '.*']);
+// Route::get('/vue', function () {
+//     return view('welcome');
+// });
 
-Route::get('/', function () {
-    return view('home.home');
-});
+// Route::get('/', function () {
+//     return view('home.home');
+// });
 
 // Auth::routes();
 

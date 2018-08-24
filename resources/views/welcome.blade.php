@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html lang="vi VN">
-    <head>
-        <meta charset="utf-8">
-        <title>EDUDU - Rating my teacher</title>
+<html lang="en">
 
-        <!-- Main styles for this application -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-        <link href="{{ mix('css/home.css') }}" rel="stylesheet">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>EDUDU - Login and Register</title>
+    <link rel="icon" href="{{asset('images/favicon.png')}}">
+    <!-- Bootstrap -->
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
+    <!--Custom template CSS-->
+    <link href="{{asset('css/style.css')}}" rel="stylesheet" />
+    <!--Custom template CSS Responsive-->
+    <link href="{{asset('css/site-responsive.css')}}" rel="stylesheet" />
+    <!--Owsome Fonts -->
+    <link rel="stylesheet" href="{{asset('font-awesome/css/font-awesome.min.css')}}" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
         <meta id="csrf-token" name="csrf-token" value="{{ csrf_token() }}">
     </head>
     <body>
-        <div id="app"></div>
-
+        <div id="app">
+        </div>
         <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>

@@ -1,0 +1,814 @@
+ /*------------------------------------------
+Project Name : Dexim Jobs
+Desgined By  : DeximLabs.com
+Developed By : DeximLabs.com;
+Date        :  January/17;
+
+Table Of Index
+------------------
+1. Base css
+2. Login buttons 
+3. Mobile Menu
+4. Header Section
+5. Animations
+6. Navigation Change to Hover
+7. Navigatiosns
+8. Slogan Area
+9. Jobs Filters
+10. Main Container
+11. Tabs Filters
+12. Filters Result
+13. Continer Blue Section
+14. Jobs Conter
+15. Price Tag
+16. Pricing Table
+17. Postslists
+18. Blue Banner
+19. Footer
+20. Job Admin
+21. Sidebar
+22. Recommended Jobs
+23. Top Jobs Filters
+24. Job list style 2
+25. Pricing Tabes
+26. Page How its Works
+27. Job slider
+28. Terms and conditions
+29. Job slider
+30. Login and Register
+31. Post A Job
+32. Checkout
+33. Companies
+34. Model Popup
+35. Blog
+36. Accordian
+------------------------------------------*/
+ 
+ @import url(custom_fonts.css);
+ @import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto:700');
+ body {
+     background: #f9f9f9;
+     font-family: OpenSansSemibold;
+     font-size: 21px;
+ }
+ 
+ body.modal-open {
+     overflow: overlay;
+     padding: 0 !important;
+ }
+ /*/////Logo//////////*/
+ 
+ .logo {
+     float: left;
+     width: 170px;
+     /* padding: 6px 0; */
+     margin-right: 10px;
+ }
+ 
+ .logo img {
+     width: 100%;
+ }
+ /*////////Login buttons/////*/
+ /*////////Mobile Menu/////////////////////*/
+ 
+ .navbar-toggle {
+     margin: 0px;
+ }
+ 
+ .navbar-fixed-bottom .navbar-collapse,
+ .navbar-fixed-top .navbar-collapse {
+     max-height: inherit;
+ }
+ 
+ .navbar-toggle .icon-bar {
+     background-color: #fff;
+     border-radius: 0;
+     height: 4px;
+     width: 25px;
+ }
+ 
+ .mobile-menu.add-job a {
+     background: #12cd6a none repeat scroll 0 0 !important;
+     border: medium none;
+     border-radius: 23px;
+     color: #ffffff !important;
+     text-align: center;
+ }
+ /*******************************/
+ 
+ .logins {
+     position: absolute;
+     right: 60px;
+     padding: 4px 0;
+ }
+ 
+ .logins span {
+     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+     border: 2px solid #12cd6a;
+     border-radius: 26px;
+     color: #232323;
+     font-family: Roboto;
+     font-size: 13px;
+     margin-right: 0;
+     padding: 12px 30px;
+     width: auto;
+ }
+ 
+ .logins span:hover {
+     background: #12cd6a;
+     color: #fff;
+ }
+ 
+ .logins span:hover {
+     background: #12cd6a;
+ }
+ 
+ .logins .login {
+     background: #12cd6a none repeat scroll 0 0;
+     border-radius: 23px;
+     color: #ffffff;
+     float: right;
+     line-height: 0;
+     margin-left: 10px;
+     padding: 15px 18px;
+     text-align: center;
+ }
+ 
+ .logins .login:hover {
+     background: #232323;
+ }
+ 
+ .logins .login i {
+     font-size: 16px;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ h3 {
+     font-family: Roboto;
+     font-size: 40px;
+     margin: 0 0 4px;
+     color: #333;
+ }
+ 
+ h4 {
+     font-family: OpenSansRegular;
+     font-size: 15px;
+ }
+ 
+ h4 span {
+     font-family: Roboto;
+     width: 100%;
+     float: left;
+ }
+ 
+ h5 {
+     font-family: LatoBlack;
+     font-size: 28px;
+ }
+ 
+ ul li {
+     font-family: OpenSansRegular;
+     font-size: 16px;
+     padding-bottom: 12px;
+ }
+ /*///////Header Section///////*/
+ 
+ .top_header {
+     position: absolute;
+     top: 29px;
+     left: 0;
+     right: 0;
+     z-index: 2;
+ }
+ /*/////////////////////////////*/
+ /*/////////Animations ///////*/
+ 
+ .navbar-fixed-top,
+ .filter-result:hover,
+ a,
+ .btn,
+ .related_jos,
+ input[type="submit"],
+ .posts-list .post-thumb img,
+ .label {
+     -webkit-transition: all 0.1s ease-in-out;
+     -moz-transition: all 0.1s ease-in-out;
+     transition: all 0.1s ease-in-out;
+     transition-duration: 0.2s;
+ }
+ /*////////////////////////*/
+ 
+ .navbar-fixed-top {
+     padding: 12px 0;
+ }
+ 
+ .fixed-header .navbar-fixed-top {
+     background: #fff;
+     box-shadow: 0 0 1px #d6d6d6;
+     padding: 10px 0;
+ }
+ 
+ nav.navbar.home {
+     margin: 0;
+ }
+ 
+ .header_banner {
+     position: relative;
+     z-index: 1;
+ }
+ /*///////////////////*/
+ 
+ .pages .navbar {
+     background: #fff;
+ }
+ 
+ .pages.fixed-header .navbar {
+     padding: 10px 0;
+ }
+ /*///////////////*/
+ 
+ .slider_items {
+     background: url(assets/images/headerimage1.jpg);
+     height: 668px;
+     background-attachment: fixed;
+     background-position: 0 83%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+ }
+ 
+ .slider_items:before {
+     content: "";
+     position: absolute;
+     left: 0;
+     right: 0;
+     background: #333;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.0) none repeat scroll 0 0;
+ }
+ 
+ #main-menu {
+     min-height: initial;
+     margin-bottom: 0;
+ }
+ /*//////////Navigation Change to Hover //////*/
+ 
+ ul.dropdown-menu {
+     border: 1px solid #fff;
+     border-radius: 14px;
+ }
+ 
+ #header .navbar-nav li.dropdown:hover ul.dropdown-menu {
+     display: block;
+     width: 230px;
+ }
+ /*///////////Navigatiosns///////////////*/
+ 
+ .nav a {
+     color: #333;
+     font-family: Roboto;
+     font-size: 15px;
+     text-transform: uppercase;
+ }
+ 
+ .nav li {
+     margin-right: 15px;
+     padding-bottom: 0;
+ }
+ 
+ .nav>li:first-child {
+     padding: 0;
+     border: medium none;
+ }
+ 
+ .nav>li:nth-of-type(2) {
+     padding: 0;
+     border: medium none;
+ }
+ 
+ .nav>li a {
+     padding: 13px 19px;
+ }
+ 
+ ul.dropdown-menu li a {
+     text-transform: none;
+     color: #333 !important;
+     padding: 13px 20px;
+     margin: 0px 18px;
+     border-bottom: 1px solid #e9e9e9;
+ }
+ 
+ .nav>li:hover a,
+ .nav>li>a:focus,
+ .nav>li>a:hover,
+ .nav li.active a {
+     color: #12cd6a;
+     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+ }
+ 
+ ul.tiny_scrolling li a {
+     text-transform: none;
+     color: #333;
+     padding: 13px 4px;
+     margin: 0px 18px;
+     border-bottom: 1px solid #e9e9e9;
+ }
+ 
+ ul.dropdown-menu li a:hover {
+     color: #12cd6a !important;
+     text-decoration: none;
+ }
+ 
+ ul.dropdown-menu li:last-child a {
+     border: none;
+ }
+ /*////////////Slogan Area/////////*/
+ 
+ .container.slogan {
+     text-align: center;
+     color: #fff;
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 164px;
+     z-index: -1;
+ }
+ 
+ .slogan h1 {
+     color: #333333;
+     font-family: LatoBlack;
+     font-size: 58px;
+ }
+ 
+ .slogan h3 {
+     margin: 0;
+     font-family: RalewayLight;
+     font-size: 25px;
+     color: #333;
+     text-align: center;
+ }
+ 
+ .slogan span {
+     color: #12cd6a;
+ }
+ 
+ .slogan a:hover {
+     background: #fff;
+     color: #333;
+     border: 2px solid #ddd;
+ }
+ 
+ .slogan a {
+     background: #fff;
+     border: 2px solid #12cd6a;
+     color: #333;
+     display: inline-block;
+     font-family: OpenSansSemibold;
+     font-size: 15px;
+     margin-top: 46px;
+     padding: 10px 31px;
+     text-decoration: none !important;
+     border-radius: 44px;
+ }
+ 
+ .slogan a span {
+     font-family: Roboto;
+ }
+ /*///////////Main Container /////////*/
+ 
+ .main-container-job {
+     padding: 18px 0px;
+ }
+ 
+ .main-container {
+     padding: 58px 0px;
+ }
+ 
+ .main-container-home {
+     padding: 29px 0;
+ }
+ /*///////Footer///////*/
+ 
+ .main-container .list-group a::before {
+     font-family: "FontAwesome";
+     font-size: 13px;
+     left: 15px;
+     position: absolute;
+ }
+ 
+ .main-container-home .list-group a::before {
+     content: "ÃƒÂ¯Ã¢â‚¬Å¾Ã¢â‚¬Â¦";
+     font-family: "FontAwesome";
+     font-size: 13px;
+     left: 15px;
+     position: absolute;
+ }
+ 
+ .footer h3 {
+     font-family: Merriweather;
+     font-size: 18px;
+     margin-bottom: 26px;
+ }
+ 
+ .footer ul li {
+     list-style: none;
+     font-size: 15px;
+     padding-bottom: 5px;
+ }
+ 
+ .footer a {
+     color: #333;
+ }
+ 
+ .footer ul li.active a,
+ .footer a:hover {
+     color: #12cd6a;
+     padding-left: 6px;
+ }
+ 
+ .footer p {
+     font-size: 15px;
+     color: #333;
+     font-family: LatoRegular;
+ }
+ 
+ .container-fluid.last-footer {
+     border-top: 1px solid #e3e3e3;
+ }
+ 
+ .container-fluid.last-footer .main-container {
+     padding: 35px 0;
+ }
+ 
+ .last-footer p {
+     font-family: LatoRegular;
+ }
+ 
+ .footer.last-footer ul li {
+     padding-bottom: 0;
+     float: left;
+     padding-right: 20px;
+ }
+ 
+ .footer.last-footer ul {
+     padding: 0;
+ }
+ 
+ .footer.last-footer ul li:first-child {
+     padding-left: 0;
+ }
+ /*////////////////////Inner Page/////////////*/
+ 
+ .blue-banner {
+     background: #12cd6a;
+ }
+ 
+ .green-banner {
+     background: #12cd6a;
+     box-shadow: 0 -17px 15px -17px #099b4e inset;
+ }
+ 
+ .page-title,
+ .header_area {
+     margin-top: 75px;
+ }
+ 
+ .page-title .white-heading {
+     font-family: OpenSansRegular;
+     text-align: left;
+     font-size: 49px;
+ }
+ 
+ .page-title .image-heading {
+     font-family: OpenSansRegular;
+     font-size: 49px;
+     text-align: left;
+ }
+ 
+ .image-heading {
+     color: #333;
+     font-family: opensansbold;
+     font-size: 39px;
+     margin-bottom: 0;
+     text-align: center;
+ }
+ /*////////Contact Us/////////////*/
+ 
+ .page-title h5 {
+     font-size: 15px;
+     color: #fff;
+     font-family: LatoRegular;
+     margin: 16px 0;
+ }
+ 
+ .form-group label {
+     text-align: right;
+     float: left;
+     width: 100px;
+     margin-right: 22px;
+     margin-bottom: 0;
+     font-family: LatoRegular;
+     font-size: 14px;
+     font-weight: normal;
+ }
+ 
+ .form-group input,
+ .form-group textarea {
+     width: 100%;
+     background: #fff;
+     box-shadow: none;
+     border: 1px solid #e1e1e1;
+     padding: 18px 16px;
+     font-size: 16px;
+     color: #333;
+     line-height: normal;
+     font-family: LatoRegular;
+     border-radius: 8px;
+ }
+ 
+ .contact_us .form-group input:focus,
+ .contact_us .form-group textarea:focus {
+     border: 1px solid #12cd6a;
+     box-shadow: none;
+     color: #333;
+ }
+ 
+ .contact_us .form-group input[type="submit"],
+ #register,
+ #signin {
+     width: initial;
+     font-family: Roboto;
+     border: none;
+     font-size: 14px;
+     background: #333;
+     text-transform: uppercase;
+     padding: 18px 46px;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 33px;
+ }
+ 
+ #form-style-2 .form-group {
+     float: left;
+     width: 100%;
+ }
+ 
+ #register:hover,
+ #signin:hover {
+     background: #f5fba3;
+     color: #000;
+ }
+ 
+ .contact_us {
+     border-bottom: 1px solid#e1e1e1;
+ }
+ /*///Login and Register ////////////////*/
+ 
+ .deximJobs_tabs {
+     box-shadow: 0 0 28px -3px #099b4e inset;
+     background: #12cd6a none repeat scroll 0 0;
+ }
+ 
+ .deximJobs_tabs .main-container {
+     padding: 80px 0;
+ }
+ 
+ .tab-content .form-group {
+     float: left;
+     width: 100%;
+ }
+ 
+ .deximJobs_tabs .tab-content {
+     margin-top: 49px;
+     float: left;
+     width: 100%;
+ }
+ 
+ .deximJobs_tabs .nav li a {
+     font-family: Roboto;
+     font-size: 45px;
+     background: none !important;
+     color: #fff;
+     padding: 0;
+     padding-right: 60px;
+     line-height: normal;
+ }
+ 
+ .deximJobs_tabs .nav li a:hover {
+     background: none !important;
+     color: #fff;
+ }
+ 
+ .deximJobs_tabs .nav li.active a {
+     color: #fff;
+ }
+ 
+ .deximJobs_tabs .contact_us {
+     border: none;
+ }
+ 
+ .deximJobs_tabs .contact_us label {
+     color: #fff;
+     width: 130px;
+     margin-left: -51px;
+     padding: 2% 0;
+ }
+ 
+ .deximJobs_tabs .contact_us input {
+     width: 75%;
+     font-size: 16px;
+     padding: 10px 17px;
+     font-family: LatoRegular;
+     border: 1px solid #12cd6a;
+ }
+ 
+ .contact_us .form-group .dropdown {
+     width: 75%;
+     float: left;
+ }
+ 
+ .deximJobs_tabs .dropdown button {
+     border: none;
+     text-align: left;
+     border-radius: 12px;
+     height: 42px;
+     width: 100%;
+ }
+ 
+ .deximJobs_tabs .contact_us button span {
+     float: right;
+     font-size: 12px;
+     position: absolute;
+     right: 15px;
+     top: 15px;
+ }
+ 
+ .deximJobs_tabs .dropdown .dropdown-menu {
+     width: 100%;
+ }
+ 
+ .deximJobs_tabs .dropdown .dropdown-menu li a {
+     padding: 10px 0;
+     border: none;
+     display: block;
+ }
+ 
+ .deximJobs_tabs p {
+     color: #fff;
+     font-size: 20px;
+     margin-bottom: 36px;
+ }
+ 
+ .sidebar h3 {
+     font-family: OpenSansSemibold;
+     font-size: 24px;
+     color: #fff;
+     text-transform: uppercase;
+     line-height: 33px;
+     margin-bottom: 28px;
+ }
+ 
+ .deximJobs_tabs .sidebar {
+     background: #0cad59;
+     margin-top: -109px;
+     border-radius: 13px;
+ }
+ 
+ .deximJobs_tabs .sidebar .widget {
+     margin-bottom: 0;
+     width: 100%;
+     float: left;
+     padding: 43px 30px;
+ }
+ 
+ .deximJobs_tabs .sidebar .widget li p {
+     text-align: left;
+     font-size: 15px;
+     font-family: LatoRegular;
+     margin-bottom: 0;
+     line-height: 25px;
+ }
+ 
+ .deximJobs_tabs .sidebar .widget li {
+     padding-bottom: 35px;
+ }
+ 
+ .deximJobs_tabs .sidebar .widget li i {
+     margin-right: 18px;
+ }
+ 
+ .deximJobs_tabs .sidebar .widget li:last-child {
+     padding-bottom: 0;
+ }
+ 
+ .sidebar>.widget>ul {
+     list-style-type: none;
+     padding-left: 0;
+ }
+ 
+ .register {
+     background: #333 !important;
+     font-size: 14px;
+     font-family: LatoRegular;
+ }
+ 
+ .form-group.submit label {
+     opacity: 0;
+ }
+ 
+ .deximJobs_tabs .contact_us .lost_password {
+     color: #333;
+     font-size: 15px;
+     padding: 10px 20px;
+ }
+ 
+ .form-group.submit .cbox {
+     float: left;
+     position: relative;
+ }
+ 
+ .form-group.submit .cbox input[type="checkbox"] {
+     width: 100%;
+     position: absolute;
+     opacity: 0;
+     height: 100%;
+     z-index: 2;
+ }
+ 
+ .cbox span:after {
+     content: "";
+     background: #fff;
+     position: absolute;
+     left: 0;
+     width: 14px;
+     height: 14px;
+     top: 4px;
+     border: 1px solid #566991;
+ }
+ 
+ .form-group.submit .cbox span {
+     font-size: 16px;
+     color: #fff;
+     padding-left: 23px;
+ }
+ 
+ .form-group.submit .cbox input[type="checkbox"]:checked+span:after {
+     background: red;
+ }
+ 
+ #signin {
+     background: #232323;
+ }
+ 
+ .deximJobs_tabs .sidebar .widget li .label.register {
+     background: #333;
+     width: initial;
+     padding: 15px 40px;
+ }
+ 
+ .fa.fa-clock-o,
+ .fa.fa-child,
+ .fa.fa-check-circle-o {
+     font-size: 26px;
+ }
+ 
+ .btn-social {
+     margin-top: 10px;
+     font-family: Montserrat-SemiBold;
+     font-size: 18px;
+     line-height: 1.2;
+     padding: 15px;
+     height: 50px;
+     width: 75%;
+     color: #fff;
+     border-radius: 10px;
+ }
+ 
+ .btn-fb:hover {
+     color: #4c699e;
+     background-color: #fff;
+ }
+ 
+ .btn-gg:hover {
+     color: #da573b;
+     background-color: #fff;
+ }
+ 
+ .btn-fb {
+     background-color: #4c699e;
+     border-color: #47618d;
+ }
+ 
+ .btn-gg {
+     background-color: #da573b;
+     border-color: #be5238;
+ }
+ 
+ .btn-fa {
+     float: left;
+     font-size: 35px;
+ }
