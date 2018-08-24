@@ -25,8 +25,9 @@ Route::group([
     Route::post('refresh', 'AuthController@refresh');
     Route::post('me', 'AuthController@me');
 
+   
 });
-
+Route::post('new/user', 'UserController@new');
 Route::resource('organization', 'API\OrganizationController');
 Route::resource('teacher', 'API\TeacherController');
 Route::resource('review', 'API\ReviewController');

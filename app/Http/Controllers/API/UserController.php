@@ -42,9 +42,18 @@ class UserController extends Controller
      */
     public function store(CreateUserRequest $request)
     {
+        // return "123";
         // phương thức post dùng để gửi form lưu dữ liệu
-        die("1231321321321");
         $user = User::create($request->only(["name", "email", "password"]));
+        // $user->name      = $request->name;
+        // $user->email     = $request->email;
+        // $user->password  = $request->password;
+        // $user->save();
+        // $user = User::create([
+        //     'name' => $request->name,
+        //     'email' => $request->email,
+        //     'password' => Hash::make($request->password),
+        // ]);
         return response()->json([
             "user" => $user
         ], 200);
@@ -94,4 +103,13 @@ class UserController extends Controller
     {
         //
     }
+    public function new(CreateUserRequest $request)
+    {
+        $user = User::create($request->only(["name", "email", "password"]));
+
+        return response()->json([
+            "user" => $user
+        ], 200);
+    }
+
 }

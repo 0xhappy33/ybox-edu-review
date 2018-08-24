@@ -8,7 +8,7 @@ export default {
         isLoggedIn: !!user,
         loading: false,
         auth_error: null,
-        customers: []
+        users: []
     },
     getters: {
         isLoading(state) {
@@ -23,8 +23,8 @@ export default {
         authError(state) {
             return state.auth_error;
         },
-        customers(state) {
-            return state.customers;
+        users(state) {
+            return state.users;
         }
     },
     mutations: {
@@ -49,19 +49,13 @@ export default {
             state.isLoggedIn = false;
             state.currentUser = null;
         },
-        updateCustomers(state, payload) {
-            state.customers = payload;
+        updateUsers(state, payload) {
+            state.users = payload;
         }
     },
     actions: {
         login(context) {
             context.commit("login");
         },
-        getCustomers(context) {
-            axios.get('/api/customers')
-                .then((response) => {
-                    context.commit('updateCustomers', response.data.customers);
-                })
-        }
     }
 };
