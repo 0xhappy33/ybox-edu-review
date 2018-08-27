@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +28,8 @@ Route::group([
 
    
 });
-Route::post('new/user', 'UserController@new');
+// Route::post('new/user', 'HomeController@newUser');
+// Route::post('new/user', );
 Route::resource('organization', 'API\OrganizationController');
 Route::resource('teacher', 'API\TeacherController');
 Route::resource('review', 'API\ReviewController');

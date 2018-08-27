@@ -40,24 +40,35 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CreateUserRequest $request)
+    public function store(Request $request)
     {
-        // return "123";
-        // phương thức post dùng để gửi form lưu dữ liệu
-        $user = User::create($request->only(["name", "email", "password"]));
-        // $user->name      = $request->name;
-        // $user->email     = $request->email;
-        // $user->password  = $request->password;
-        // $user->save();
-        // $user = User::create([
-        //     'name' => $request->name,
-        //     'email' => $request->email,
-        //     'password' => Hash::make($request->password),
-        // ]);
-        return response()->json([
-            "user" => $user
-        ], 200);
-    }
+        // // return "123";
+        // // phương thức post dùng để gửi form lưu dữ liệu
+        // $user = User::create($request->only(["name", "email", "password"]));
+        // // $user->name      = $request->name;
+        // // $user->email     = $request->email;
+        // // $user->password  = $request->password;
+        // // $user->save();
+        // // $user = User::create([
+        // //     'name' => $request->name,
+        // //     'email' => $request->email,
+        // //     'password' => Hash::make($request->password),
+        // // ]);
+        // return response()->json([
+        //     "user" => $user
+        // ], 200);
+        
+            $data = [$request->name,$request->email,$request->password];
+            $user = New User;
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->password = bcrypt($request->password);
+            $user->save();
+            return response()->json([
+                'user' => $user,
+            ], 200);
+        }
+    
 
     /**
      * Display the specified resource.

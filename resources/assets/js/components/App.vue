@@ -9,8 +9,8 @@
 </template>
 
 <script>
-    import Header from './layouts/HeaderLight.vue';
-	 import Footer from './layouts/FooterLight.vue';
+    import Header from './layouts/headerLight.vue';
+	 import Footer from './layouts/footerLight.vue';
     export default {
         name: 'main-app',
 		components: {

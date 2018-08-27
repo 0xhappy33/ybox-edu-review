@@ -47374,10 +47374,10 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layouts_HeaderLight_vue__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layouts_HeaderLight_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__layouts_HeaderLight_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layouts_FooterLight_vue__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layouts_FooterLight_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__layouts_FooterLight_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layouts_headerLight_vue__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__layouts_headerLight_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__layouts_headerLight_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layouts_footerLight_vue__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layouts_footerLight_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__layouts_footerLight_vue__);
 //
 //
 //
@@ -47394,554 +47394,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
 	name: 'main-app',
 	components: {
-		Header: __WEBPACK_IMPORTED_MODULE_0__layouts_HeaderLight_vue___default.a,
-		Footer: __WEBPACK_IMPORTED_MODULE_1__layouts_FooterLight_vue___default.a
+		Header: __WEBPACK_IMPORTED_MODULE_0__layouts_headerLight_vue___default.a,
+		Footer: __WEBPACK_IMPORTED_MODULE_1__layouts_footerLight_vue___default.a
 	}
 });
 
 /***/ }),
-/* 48 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(1)
-/* script */
-var __vue_script__ = __webpack_require__(49)
-/* template */
-var __vue_template__ = __webpack_require__(50)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\layouts\\HeaderLight.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-73d46fe2", Component.options)
-  } else {
-    hotAPI.reload("data-v-73d46fe2", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 49 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: 'app-header',
-    methods: {
-        logout: function logout() {
-            this.$store.commit('logout');
-            this.$router.push('/login');
-        }
-    },
-    computed: {
-        currentUser: function currentUser() {
-            return this.$store.getters.currentUser;
-        }
-    }
-});
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container-fluid pages", attrs: { id: "header" } },
-    [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "top_header" }, [
-          _c("nav", { staticClass: "navbar navbar-fixed-top" }, [
-            _c("div", { staticClass: "container" }, [
-              _c(
-                "div",
-                { staticClass: "logo" },
-                [
-                  _c("router-link", { attrs: { to: { name: "home" } } }, [
-                    _c("img", { attrs: { src: "/images/logo2.png", alt: "" } })
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(0),
-              _vm._v(" "),
-              _vm._m(1),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "collapse navbar-collapse",
-                  attrs: { id: "bs-example-navbar-collapse-1" }
-                },
-                [
-                  _c(
-                    "ul",
-                    { staticClass: "nav navbar-nav" },
-                    [
-                      _c("li", { staticClass: "dropdown" }),
-                      _vm._v(" "),
-                      _vm._m(2),
-                      _vm._v(" "),
-                      _vm._m(3),
-                      _vm._v(" "),
-                      _vm._m(4),
-                      _vm._v(" "),
-                      !_vm.currentUser
-                        ? [
-                            _c(
-                              "li",
-                              [
-                                _c(
-                                  "router-link",
-                                  { attrs: { to: { name: "register" } } },
-                                  [_vm._v("Đăng ký")]
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "li",
-                              [
-                                _c(
-                                  "router-link",
-                                  { attrs: { to: { name: "login" } } },
-                                  [_vm._v("Đăng nhập")]
-                                )
-                              ],
-                              1
-                            )
-                          ]
-                        : [
-                            _c(
-                              "li",
-                              [
-                                _c(
-                                  "router-link",
-                                  { attrs: { to: { name: "register" } } },
-                                  [_vm._v("Trang cá nhân")]
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "dropdown-item",
-                                  attrs: { href: "#!" },
-                                  on: {
-                                    click: function($event) {
-                                      $event.preventDefault()
-                                      return _vm.logout($event)
-                                    }
-                                  }
-                                },
-                                [_vm._v("Logout")]
-                              )
-                            ])
-                          ],
-                      _vm._v(" "),
-                      _vm._m(5)
-                    ],
-                    2
-                  )
-                ]
-              )
-            ])
-          ])
-        ])
-      ])
-    ]
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "logins" }, [
-      _c("a", { staticClass: "post_job", attrs: { href: "#" } }, [
-        _c("span", { staticClass: "label job-type partytime" }, [
-          _vm._v("Giáo viên")
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "navbar-header" }, [
-      _c(
-        "button",
-        {
-          staticClass: "navbar-toggle collapsed",
-          attrs: {
-            type: "button",
-            "data-toggle": "collapse",
-            "data-target": "#bs-example-navbar-collapse-1",
-            "aria-expanded": "false"
-          }
-        },
-        [
-          _c("span", { staticClass: "sr-only" }, [_vm._v("Toggle navigation")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" })
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "mobile-menu add-job" }, [
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Giáo viên")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "dropdown-menu" }, [
-      _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Home#2")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Viết đánh giá")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Liên hệ")])])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-73d46fe2", module.exports)
-  }
-}
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(1)
-/* script */
-var __vue_script__ = __webpack_require__(52)
-/* template */
-var __vue_template__ = __webpack_require__(53)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources\\assets\\js\\components\\layouts\\FooterLight.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6b4d84c1", Component.options)
-  } else {
-    hotAPI.reload("data-v-6b4d84c1", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 52 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-        name: 'app-footer'
-});
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container-fluid footer" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "container main-container" }, [
-          _c("img", { attrs: { src: "/images/logo2.png" } }),
-          _vm._v(" "),
-          _c("hr"),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-lg-3 col-md-3 col-sm-3 col-xs-12" }, [
-            _c("h3", [_vm._v("Giới thiệu")]),
-            _vm._v(" "),
-            _c("ul", { staticClass: "list-group" }, [
-              _c("li", [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Về EDUDU")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Điều khoản")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "#" } }, [
-                  _vm._v("Quy định Giáo viên")
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-lg-3 col-md-3 col-sm-3 col-xs-12" }, [
-            _c("h3", [_vm._v("Doanh nghiệp")]),
-            _vm._v(" "),
-            _c("ul", { staticClass: "list-group" }, [
-              _c("li", [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Liên hệ quảng cáo")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Đăng ký giáo viên")])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-lg-3 col-md-3 col-sm-3 col-xs-12" }, [
-            _c("h3", [_vm._v("Liên hệ")]),
-            _vm._v(" "),
-            _c("ul", { staticClass: "list-group" }, [
-              _c("li", [_vm._v("123 Quang Trung, Đà Nẵng")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("+84 123 456 789")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("hello@edudu.vn")]),
-              _vm._v(" "),
-              _c("li", [_vm._v("http://www.edudu.vn")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-lg-3 col-md-3 col-sm-3 col-xs-12" }, [
-            _c("h3", [_vm._v("Kết nối với chúng tôi")]),
-            _vm._v(" "),
-            _c("ul", { staticClass: "list-group" }, [
-              _c("li", [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("i", { staticClass: "fa fa-facebook" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("i", { staticClass: "fa fa-twitter" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("i", { staticClass: "fa fa-google-plus-square" })
-                ])
-              ])
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6b4d84c1", module.exports)
-  }
-}
-
-/***/ }),
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -51268,6 +50732,552 @@ var user = Object(__WEBPACK_IMPORTED_MODULE_0__helpers_auth__["a" /* getLocalUse
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(84)
+/* template */
+var __vue_template__ = __webpack_require__(85)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\layouts\\headerLight.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0183102f", Component.options)
+  } else {
+    hotAPI.reload("data-v-0183102f", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 84 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: 'app-header',
+    methods: {
+        logout: function logout() {
+            this.$store.commit('logout');
+            this.$router.push('/login');
+        }
+    },
+    computed: {
+        currentUser: function currentUser() {
+            return this.$store.getters.currentUser;
+        }
+    }
+});
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "container-fluid pages", attrs: { id: "header" } },
+    [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "top_header" }, [
+          _c("nav", { staticClass: "navbar navbar-fixed-top" }, [
+            _c("div", { staticClass: "container" }, [
+              _c(
+                "div",
+                { staticClass: "logo" },
+                [
+                  _c("router-link", { attrs: { to: { name: "home" } } }, [
+                    _c("img", { attrs: { src: "/images/logo2.png", alt: "" } })
+                  ])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "collapse navbar-collapse",
+                  attrs: { id: "bs-example-navbar-collapse-1" }
+                },
+                [
+                  _c(
+                    "ul",
+                    { staticClass: "nav navbar-nav" },
+                    [
+                      _c("li", { staticClass: "dropdown" }),
+                      _vm._v(" "),
+                      _vm._m(2),
+                      _vm._v(" "),
+                      _vm._m(3),
+                      _vm._v(" "),
+                      _vm._m(4),
+                      _vm._v(" "),
+                      !_vm.currentUser
+                        ? [
+                            _c(
+                              "li",
+                              [
+                                _c(
+                                  "router-link",
+                                  { attrs: { to: { name: "register" } } },
+                                  [_vm._v("Đăng ký")]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "li",
+                              [
+                                _c(
+                                  "router-link",
+                                  { attrs: { to: { name: "login" } } },
+                                  [_vm._v("Đăng nhập")]
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        : [
+                            _c(
+                              "li",
+                              [
+                                _c(
+                                  "router-link",
+                                  { attrs: { to: { name: "register" } } },
+                                  [_vm._v("Trang cá nhân")]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "dropdown-item",
+                                  attrs: { href: "#!" },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      return _vm.logout($event)
+                                    }
+                                  }
+                                },
+                                [_vm._v("Logout")]
+                              )
+                            ])
+                          ],
+                      _vm._v(" "),
+                      _vm._m(5)
+                    ],
+                    2
+                  )
+                ]
+              )
+            ])
+          ])
+        ])
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logins" }, [
+      _c("a", { staticClass: "post_job", attrs: { href: "#" } }, [
+        _c("span", { staticClass: "label job-type partytime" }, [
+          _vm._v("Giáo viên")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "navbar-header" }, [
+      _c(
+        "button",
+        {
+          staticClass: "navbar-toggle collapsed",
+          attrs: {
+            type: "button",
+            "data-toggle": "collapse",
+            "data-target": "#bs-example-navbar-collapse-1",
+            "aria-expanded": "false"
+          }
+        },
+        [
+          _c("span", { staticClass: "sr-only" }, [_vm._v("Toggle navigation")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "icon-bar" })
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "mobile-menu add-job" }, [
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Giáo viên")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "dropdown-menu" }, [
+      _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Home#2")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Viết đánh giá")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Liên hệ")])])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0183102f", module.exports)
+  }
+}
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(87)
+/* template */
+var __vue_template__ = __webpack_require__(88)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\layouts\\footerLight.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-b28a663e", Component.options)
+  } else {
+    hotAPI.reload("data-v-b28a663e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 87 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+        name: 'app-footer'
+});
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container-fluid footer" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "container main-container" }, [
+          _c("img", { attrs: { src: "/images/logo2.png" } }),
+          _vm._v(" "),
+          _c("hr"),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-3 col-md-3 col-sm-3 col-xs-12" }, [
+            _c("h3", [_vm._v("Giới thiệu")]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "list-group" }, [
+              _c("li", [
+                _c("a", { attrs: { href: "#" } }, [_vm._v("Về EDUDU")])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "#" } }, [_vm._v("Điều khoản")])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "#" } }, [
+                  _vm._v("Quy định Giáo viên")
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-3 col-md-3 col-sm-3 col-xs-12" }, [
+            _c("h3", [_vm._v("Doanh nghiệp")]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "list-group" }, [
+              _c("li", [
+                _c("a", { attrs: { href: "#" } }, [_vm._v("Liên hệ quảng cáo")])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "#" } }, [_vm._v("Đăng ký giáo viên")])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-3 col-md-3 col-sm-3 col-xs-12" }, [
+            _c("h3", [_vm._v("Liên hệ")]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "list-group" }, [
+              _c("li", [_vm._v("123 Quang Trung, Đà Nẵng")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("+84 123 456 789")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("hello@edudu.vn")]),
+              _vm._v(" "),
+              _c("li", [_vm._v("http://www.edudu.vn")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-3 col-md-3 col-sm-3 col-xs-12" }, [
+            _c("h3", [_vm._v("Kết nối với chúng tôi")]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "list-group" }, [
+              _c("li", [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "fa fa-facebook" })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "fa fa-twitter" })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "fa fa-google-plus-square" })
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-b28a663e", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
