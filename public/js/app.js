@@ -1495,8 +1495,8 @@ module.exports = function() {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(17);
-__webpack_require__(76);
-module.exports = __webpack_require__(77);
+__webpack_require__(77);
+module.exports = __webpack_require__(78);
 
 
 /***/ }),
@@ -1512,7 +1512,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_App__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_App___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_App__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__routes_index_js__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__store__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__store__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__helpers_general__ = __webpack_require__(14);
 __webpack_require__(18);
 
@@ -47978,7 +47978,7 @@ if (false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_views_auth_register_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_views_auth_register_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_views_home__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_views_home___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_views_home__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_404__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_404__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_404___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_404__);
 
 
@@ -50214,7 +50214,7 @@ var normalizeComponent = __webpack_require__(1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(69)
+var __vue_template__ = __webpack_require__(70)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -50284,16 +50284,17 @@ if(false) {
 
 exports = module.exports = __webpack_require__(4)(false);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Noto+Sans);", ""]);
 
 // module
-exports.push([module.i, "\n.mt-t[data-v-00661cb8]{\r\n    margin-top: 80px;\n}\r\n", ""]);
+exports.push([module.i, "\n#home[data-v-00661cb8]{\r\n font-family: 'Noto Sans', sans-serif;\r\n font-size: 15px;\r\n background: #fff;\n}\n.search-main[data-v-00661cb8] {\r\n    border: 1px solid #000;\r\n    margin-top: 15%;\r\n    margin-bottom: 15%;\r\n    padding-top: 2%;\r\n    padding-bottom: 5%;\r\n    background: rgba(0, 0, 0, 0.5);\n}\n.search-main>.title[data-v-00661cb8] {\r\n    color: #ffffff;\r\n    margin-bottom: 5%;\n}\n.bg-main[data-v-00661cb8] {\r\n    background: url('/ahi.jpg') center;\r\n    background-size: cover;\n}\n.form-search[data-v-00661cb8] {\r\n    width: 50%;\r\n    height: 40px;\r\n    border-radius: 5px;\r\n    border: none;\n}\n.form-submit[data-v-00661cb8] {\r\n    height: 40px;\r\n    width: 40px;\r\n    background: #12cd6a;\r\n    color: #fff;\r\n    border: none;\n}\n.checked[data-v-00661cb8] {\r\n    color: orange;\n}\n.card-header[data-v-00661cb8] {\r\n    display: table;\r\n    margin-bottom: 10px;\n}\n.card-auth[data-v-00661cb8] {\r\n    margin-bottom: 10px;\n}\nimg.profile-image[data-v-00661cb8] {\r\n    display: table-cell;\r\n    height: 40px;\r\n    width: 40px;\r\n    border-radius: 50%;\n}\n.rating-star[data-v-00661cb8] {\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    padding-left: 20px;\n}\n.card-body>p[data-v-00661cb8] {\r\n    text-align: justify;\n}\n.recent-review[data-v-00661cb8] {\r\n    margin-top: -10%;\n}\n.card-rating[data-v-00661cb8] {\r\n    background: #f2f4f5;\r\n    padding: 15px;\r\n    margin-bottom: 15px;\r\n    border-radius: 1%;\r\n    -webkit-transition: ease 0.3s;\r\n    /* Safari */\r\n    transition: ease 0.3s;\n}\n.card-rating[data-v-00661cb8]:hover {\r\n    -webkit-transform: scale(1.05);\r\n            transform: scale(1.05);\r\n    -webkit-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, .5);\r\n            box-shadow: 0 3px 25px 0 rgba(0, 0, 0, .5);\n}\n.carousel-caption>.card-rating[data-v-00661cb8] {\r\n    background: #12cd6a;\n}\n.carousel-caption[data-v-00661cb8] {\r\n    text-align: left\n}\n.carousel-caption a[data-v-00661cb8] {\r\n    color: #000;\n}\n.title-car[data-v-00661cb8] {\r\n    margin: 50px;\n}\n.title-car>h2[data-v-00661cb8] {\r\n    font-size: 3.875rem;\r\n    line-height: 3.75rem;\r\n    font-weight: 700;\n}\n.edm[data-v-00661cb8] {\r\n    text-align: center;\r\n    background-color: #F8F8ED;\r\n    margin-top: 5%;\n}\r\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 69 */
+/* 69 */,
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -50307,17 +50308,662 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container mt-t" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-lg-12" }, [
-          _c("h3", { staticClass: "text-center" }, [
-            _vm._v("This is HOME PAGE")
+    return _c("div", { attrs: { id: "home" } }, [
+      _c("div", { staticClass: "container-fluid bg-main" }, [
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-md-6 col-md-offset-3 text-center search-main" },
+            [
+              _c("h2", { staticClass: "title" }, [
+                _vm._v("Tìm kiếm giáo viên của bạn")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "search" }, [
+                _c("div", { staticClass: "search-container" }, [
+                  _c("form", { attrs: { action: "" } }, [
+                    _c("input", {
+                      staticClass: "form-search",
+                      attrs: {
+                        type: "text",
+                        placeholder: "  Tìm kiếm....",
+                        name: "search"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      { staticClass: "form-submit", attrs: { type: "submit" } },
+                      [_c("i", { staticClass: "fa fa-search" })]
+                    )
+                  ])
+                ])
+              ])
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "row recent-review" }, [
+            _c(
+              "div",
+              {
+                staticClass: "row",
+                staticStyle: {
+                  "margin-left": "15px",
+                  "margin-right": "0",
+                  "margin-bottom": "15px"
+                }
+              },
+              [
+                _c("span", { staticStyle: { color: "#fff" } }, [
+                  _vm._v("Đánh giá gần đây")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
+              _c("div", { staticClass: "card-rating" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c("img", {
+                    staticClass: "profile-image",
+                    attrs: { src: "/avt.jpg", alt: "" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "rating-star" }, [
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-auth" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
+                  _vm._v(" đã đánh giá\n                            "),
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-body" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
+              _c("div", { staticClass: "card-rating" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c("img", {
+                    staticClass: "profile-image",
+                    attrs: { src: "/avt.jpg", alt: "" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "rating-star" }, [
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-auth" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
+                  _vm._v(" đã đánh giá\n                            "),
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-body" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
+              _c("div", { staticClass: "card-rating" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c("img", {
+                    staticClass: "profile-image",
+                    attrs: { src: "/avt.jpg", alt: "" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "rating-star" }, [
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-auth" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
+                  _vm._v(" đã đánh giá\n                            "),
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-body" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
+              _c("div", { staticClass: "card-rating" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c("img", {
+                    staticClass: "profile-image",
+                    attrs: { src: "/avt.jpg", alt: "" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "rating-star" }, [
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-auth" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
+                  _vm._v(" đã đánh giá\n                            "),
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-body" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
+              _c("div", { staticClass: "card-rating" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c("img", {
+                    staticClass: "profile-image",
+                    attrs: { src: "/avt.jpg", alt: "" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "rating-star" }, [
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-auth" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
+                  _vm._v(" đã đánh giá\n                            "),
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-body" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
+              _c("div", { staticClass: "card-rating" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c("img", {
+                    staticClass: "profile-image",
+                    attrs: { src: "/avt.jpg", alt: "" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "rating-star" }, [
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-auth" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
+                  _vm._v(" đã đánh giá\n                            "),
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-body" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
+              _c("div", { staticClass: "card-rating" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c("img", {
+                    staticClass: "profile-image",
+                    attrs: { src: "/avt.jpg", alt: "" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "rating-star" }, [
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-auth" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
+                  _vm._v(" đã đánh giá\n                            "),
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-body" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
+              _c("div", { staticClass: "card-rating" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c("img", {
+                    staticClass: "profile-image",
+                    attrs: { src: "/avt.jpg", alt: "" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "rating-star" }, [
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star checked" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "fa fa-star" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-auth" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
+                  _vm._v(" đã đánh giá\n                            "),
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-body" }, [
+                  _c("p", [
+                    _vm._v(
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
+                    )
+                  ])
+                ])
+              ])
+            ])
           ]),
           _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\r\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n      "
+          _c("div", { staticClass: "row" }, [
+            _c("section", [
+              _c("div", { staticClass: "container" }, [
+                _c("div", { staticClass: "text-center title-car" }, [
+                  _c("p", [
+                    _c("span", { staticStyle: { color: "#9192a7" } }, [
+                      _vm._v("Chuyện của học viên")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("h2", [_vm._v("Mỗi đánh giá đều có một câu chuyện")])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "carousel slide",
+                    attrs: { id: "myCarousel", "data-ride": "carousel" }
+                  },
+                  [
+                    _c("ol", { staticClass: "carousel-indicators" }, [
+                      _c("li", {
+                        staticClass: "active",
+                        attrs: {
+                          "data-target": "#myCarousel",
+                          "data-slide-to": "0"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("li", {
+                        attrs: {
+                          "data-target": "#myCarousel",
+                          "data-slide-to": "1"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("li", {
+                        attrs: {
+                          "data-target": "#myCarousel",
+                          "data-slide-to": "2"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "carousel-inner" }, [
+                      _c("div", { staticClass: "item active" }, [
+                        _c("img", {
+                          staticStyle: { width: "100%", height: "500px" },
+                          attrs: { src: "ahi.jpg", alt: "Los Angeles" }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "carousel-caption" }, [
+                          _c("div", { staticClass: "card-rating" }, [
+                            _c("div", { staticClass: "card-header" }, [
+                              _c("img", {
+                                staticClass: "profile-image",
+                                attrs: { src: "/avt.jpg", alt: "" }
+                              }),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "rating-star" }, [
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "fa fa-star" }),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "fa fa-star" })
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "card-auth" }, [
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v("Nguyễn Văn Hà")
+                              ]),
+                              _vm._v(
+                                " đã đánh giá\n                                                "
+                              ),
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v("Quang Tuấn")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "card-body" }, [
+                              _c("p", [
+                                _vm._v(
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n                                                    scrambled it to make a type specimen book. "
+                                )
+                              ])
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "item" }, [
+                        _c("img", {
+                          staticStyle: { width: "100%", height: "500px" },
+                          attrs: { src: "avt.jpg", alt: "Chicago" }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "carousel-caption" }, [
+                          _c("div", { staticClass: "card-rating" }, [
+                            _c("div", { staticClass: "card-header" }, [
+                              _c("img", {
+                                staticClass: "profile-image",
+                                attrs: { src: "/avt.jpg", alt: "" }
+                              }),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "rating-star" }, [
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "fa fa-star" }),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "fa fa-star" })
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "card-auth" }, [
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v("Nguyễn Văn Hà")
+                              ]),
+                              _vm._v(
+                                " đã đánh giá\n                                                "
+                              ),
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v("Quang Tuấn")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "card-body" }, [
+                              _c("p", [
+                                _vm._v(
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n                                                    scrambled it to make a type specimen book. "
+                                )
+                              ])
+                            ])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "item" }, [
+                        _c("img", {
+                          staticStyle: { width: "100%", height: "500px" },
+                          attrs: { src: "ahi.jpg", alt: "New York" }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "carousel-caption" }, [
+                          _c("div", { staticClass: "card-rating" }, [
+                            _c("div", { staticClass: "card-header" }, [
+                              _c("img", {
+                                staticClass: "profile-image",
+                                attrs: { src: "/avt.jpg", alt: "" }
+                              }),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "rating-star" }, [
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "fa fa-star" }),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "fa fa-star" })
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "card-auth" }, [
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v("Nguyễn Văn Hà")
+                              ]),
+                              _vm._v(
+                                " đã đánh giá\n                                                "
+                              ),
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v("Quang Tuấn")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "card-body" }, [
+                              _c("p", [
+                                _vm._v(
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n                                                    scrambled it to make a type specimen book. "
+                                )
+                              ])
+                            ])
+                          ])
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "left carousel-control",
+                        attrs: { href: "#myCarousel", "data-slide": "prev" }
+                      },
+                      [
+                        _c("span", {
+                          staticClass: "glyphicon glyphicon-chevron-left"
+                        }),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "sr-only" }, [
+                          _vm._v("Previous")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "right carousel-control",
+                        attrs: { href: "#myCarousel", "data-slide": "next" }
+                      },
+                      [
+                        _c("span", {
+                          staticClass: "glyphicon glyphicon-chevron-right"
+                        }),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("section", { staticClass: "edm container-fluid" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "h3",
+              {
+                staticStyle: {
+                  "text-align": "left",
+                  margin: "30px 0",
+                  "padding-left": "15px"
+                }
+              },
+              [_vm._v("Tại sao bạn nên chọn EDUDU ?")]
             )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "ahihi" }, [
+                _c("img", { attrs: { src: "/1.png", alt: "", srcset: "" } }),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Học viên")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Được đánh giá giáo viên của họ")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "ahihi" }, [
+                _c("img", { attrs: { src: "/2.png", alt: "", srcset: "" } }),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Giáo viên")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Có căn cứ để hoàn thiện kĩ năng giảng dạy")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "ahihi" }, [
+                _c("img", { attrs: { src: "/3.png", alt: "", srcset: "" } }),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Trung tâm")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("Có căn cứ để hoàn thiện"),
+                  _c("br"),
+                  _vm._v(
+                    "chương trình đào tạo giúp cải thiện chất lượng\n                        "
+                  )
+                ])
+              ])
+            ])
           ])
         ])
       ])
@@ -50334,19 +50980,19 @@ if (false) {
 }
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(71)
+  __webpack_require__(72)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(73)
+var __vue_script__ = __webpack_require__(74)
 /* template */
-var __vue_template__ = __webpack_require__(74)
+var __vue_template__ = __webpack_require__(75)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -50385,13 +51031,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(72);
+var content = __webpack_require__(73);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -50411,7 +51057,7 @@ if(false) {
 }
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(4)(false);
@@ -50425,7 +51071,7 @@ exports.push([module.i, "\n.error-404[data-v-1d82369e] {\r\n  margin: 0 auto;\r\
 
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50482,7 +51128,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -50544,7 +51190,7 @@ if (false) {
 }
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50612,13 +51258,13 @@ var user = Object(__WEBPACK_IMPORTED_MODULE_0__helpers_auth__["a" /* getLocalUse
 });
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -16,6 +16,8 @@
     <link href="{{asset('css/site-responsive.css')}}" rel="stylesheet" />
     <!--Owsome Fonts -->
     <link rel="stylesheet" href="{{asset('font-awesome/css/font-awesome.min.css')}}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
