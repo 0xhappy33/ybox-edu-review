@@ -6,10 +6,12 @@ import App from './components/App'
 import { routes } from './routes/index.js'
 import StoreData from './store';
 import { initialize } from './helpers/general';
+import vueHeadful from 'vue-headful';
+
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
-
+Vue.component('vue-headful', vueHeadful);
 const store = new Vuex.Store(StoreData);
 
 const router = new VueRouter({

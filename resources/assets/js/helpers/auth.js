@@ -7,8 +7,8 @@ export function login(credentials) {
                 setAuthorization(response.data.access_token);
                 res(response.data);
             })
-            .catch((err) =>{
-                rej("Wrong email or password");
+            .catch((err) => {
+                rej("Vui lòng kiểm tra tài khoản hoặc mật khẩu vừa nhập !");
             })
     })
 }
@@ -16,7 +16,7 @@ export function login(credentials) {
 export function getLocalUser() {
     const userStr = localStorage.getItem("user");
 
-    if(!userStr) {
+    if (!userStr) {
         return null;
     }
 

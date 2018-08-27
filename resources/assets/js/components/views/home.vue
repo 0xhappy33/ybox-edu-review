@@ -1,5 +1,9 @@
 <template>
   <div id="home">
+      <vue-headful
+            title="EDUDU - Hệ thống đánh giá chất lượng giảng dạy của giáo viên | edudu.vn"
+            description="Hệ thống đánh giá chất lượng giảng dạy của giáo viên"
+        />
     <div class="container-fluid bg-main">
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center search-main">

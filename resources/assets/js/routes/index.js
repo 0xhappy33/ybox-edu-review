@@ -6,17 +6,16 @@ import NotFound from '../components/404'
 export const routes = [{
         path: '/login',
         name: 'login',
-        component: Login
+        component: Login,
     },
+
     {
         path: '/register',
         name: 'register',
         component: Register
-    },
-    {
+    }, {
         path: '/',
         name: 'home',
         component: Home
-    },
-    { path: '*', component: NotFound }
+    }, { path: '*', component: NotFound }
 ];

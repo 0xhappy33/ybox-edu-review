@@ -1,4 +1,9 @@
 <template>
+<div>
+    <vue-headful
+            title="Đăng nhập | EDUDU - Hệ thống đánh giá chất lượng giảng dạy của giáo viên | edudu.vn"
+            description="Hệ thống đánh giá chất lượng giảng dạy của giáo viên"
+        />
     <div class="container-fluid login_register header_area deximJobs_tabs">
         <div class="row">
             <div class="container main-container-home">
@@ -69,6 +74,7 @@
             </div>
         </div>
     </div>
+</div>
 </template>
 <script>
  import {login} from '../../../helpers/auth';

@@ -9,10 +9,10 @@
                         <div class="logo">
                             <router-link :to="{ name: 'home' }"><img src="/images/logo2.png" alt="" /></router-link>
                         </div>
-                        <div class="logins">
+                        <!-- <div class="logins">
                             <a href="#" class="post_job"><span class="label job-type partytime">Giáo viên</span></a>
-                            <!-- <a href="#" class="login"><i class="fa fa-user"></i></a> -->
-                        </div>
+                            <a href="#" class="login"><i class="fa fa-user"></i></a>
+                        </div> -->
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -51,6 +51,9 @@
                                 </li>
                                 </template>
                                 <li><a href="#">Liên hệ</a></li>
+                                <li>
+                                    <a class="gv" href="#">Giáo viên</a>
+                                </li>
                             </ul>
 
                         </div>
@@ -72,11 +75,30 @@
     float: right;
     margin: 0;  
     }
+    
+}
+@media (max-width: 1200px) {
+    .gv{
+        display: none;
+    }
 }
  .pages .navbar {
      box-shadow:  0 0 2px #ccc;
      /* background-color: rgba(0, 0, 0, 0.2); */
      
+ }
+ .gv{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid #12cd6a;
+    border-radius: 26px;
+    color: #232323;
+    font-family: Roboto;
+    font-size: 13px;
+    margin-right: 0;
+    padding: 12px 30px;
+    width: auto;
+
+
  }
 
 </style>
