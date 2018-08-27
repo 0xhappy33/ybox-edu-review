@@ -413,6 +413,7 @@ img.profile-image {
 
 .card-body>p {
     text-align: justify;
+    font-size: 14px;
 }
 
 .recent-review {

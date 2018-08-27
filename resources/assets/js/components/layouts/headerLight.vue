@@ -56,6 +56,22 @@
     </div>
   <!-- Header Image Or May be Slider-->
 </template>
+<style scoped>
+@media (min-width: 768px)
+{
+    .navbar-nav {
+    float: right;
+    margin: 0;  
+    }
+}
+ .pages .navbar {
+     box-shadow:  0 0 2px #ccc;
+     /* background-color: rgba(0, 0, 0, 0.2); */
+     
+ }
+
+</style>
+
 <script>
     export default{
         name: 'app-header',
@@ -71,4 +87,18 @@
             }
         }
     }
+    // $(document).ready(function(){
+        
+    //     $(window).scroll(function(){
+    //         if($(this).scrollTop() === 0){
+    //             $(".pages .navbar").css({"background": "rgba(0, 0, 0, 0.2)"});
+    //             $(".nav>li a").css({"color": "aliceblue"});
+                
+    //         }
+    //         else{
+    //             $(".pages .navbar").css({"background-color": "#fff"});
+    //             $(".nav>li a").css({"color": "#333"});
+    //         }
+    //     })
+    // })
 </script>
