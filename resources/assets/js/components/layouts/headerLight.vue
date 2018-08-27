@@ -38,8 +38,17 @@
                                 <li><router-link :to="{ name: 'login' }">Đăng nhập</router-link></li>
                                 </template>
                                 <template v-else>
-                                <li><router-link :to="{ name: 'register' }">Trang cá nhân</router-link></li>
-                                <li><a href="#!" @click.prevent="logout" class="dropdown-item">Logout</a></li>
+                                <li>
+                                    <a  style="cursor:  pointer;" class="dropdown-toggle" type="button" data-toggle="dropdown">{{ currentUser.name }}
+                                        <!-- <span class="caret"></span> -->
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item">Trang cá nhân</a></li>
+                                        <li><a href="#" class="dropdown-item">Tất cả đánh giá</a></li>
+                                        <li><a href="#" class="dropdown-item">Logout</a></li>
+                                        <li><a href="#" @click.prevent="logout" class="dropdown-item">Đăng xuất</a></li>
+                                    </ul>
+                                </li>
                                 </template>
                                 <li><a href="#">Liên hệ</a></li>
                             </ul>

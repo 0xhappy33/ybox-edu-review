@@ -313,8 +313,9 @@
             </div>
         </div>
         <section class="edm container-fluid">
+          <div class="container main-container">
             <div class="row">
-                <h3 style="text-align: left; margin: 30px 0; padding-left: 15px;">Tại sao bạn nên chọn EDUDU ?</h3>
+                <h4 style="text-align: left; margin: 30px 0; padding-left: 15px;">Tại sao bạn nên chọn EDUDU ?</h4>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -340,6 +341,7 @@
                     </div>
                 </div>
             </div>
+          </div>
         </section>
     </section>
 </div>

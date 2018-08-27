@@ -50378,53 +50378,55 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("section", { staticClass: "edm container-fluid" }, [
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "h3",
-              {
-                staticStyle: {
-                  "text-align": "left",
-                  margin: "30px 0",
-                  "padding-left": "15px"
-                }
-              },
-              [_vm._v("Tại sao bạn nên chọn EDUDU ?")]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "ahihi" }, [
-                _c("img", { attrs: { src: "/1.png", alt: "", srcset: "" } }),
-                _vm._v(" "),
-                _c("h4", [_vm._v("Học viên")]),
-                _vm._v(" "),
-                _c("p", [_vm._v("Được đánh giá giáo viên của họ")])
-              ])
+          _c("div", { staticClass: "container main-container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "h4",
+                {
+                  staticStyle: {
+                    "text-align": "left",
+                    margin: "30px 0",
+                    "padding-left": "15px"
+                  }
+                },
+                [_vm._v("Tại sao bạn nên chọn EDUDU ?")]
+              )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "ahihi" }, [
-                _c("img", { attrs: { src: "/2.png", alt: "", srcset: "" } }),
-                _vm._v(" "),
-                _c("h4", [_vm._v("Giáo viên")]),
-                _vm._v(" "),
-                _c("p", [_vm._v("Có căn cứ để hoàn thiện kĩ năng giảng dạy")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "ahihi" }, [
-                _c("img", { attrs: { src: "/3.png", alt: "", srcset: "" } }),
-                _vm._v(" "),
-                _c("h4", [_vm._v("Trung tâm")]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v("Có căn cứ để hoàn thiện"),
-                  _c("br"),
-                  _vm._v(
-                    "chương trình đào tạo giúp cải thiện chất lượng\n                        "
-                  )
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("div", { staticClass: "ahihi" }, [
+                  _c("img", { attrs: { src: "/1.png", alt: "", srcset: "" } }),
+                  _vm._v(" "),
+                  _c("h4", [_vm._v("Học viên")]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Được đánh giá giáo viên của họ")])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("div", { staticClass: "ahihi" }, [
+                  _c("img", { attrs: { src: "/2.png", alt: "", srcset: "" } }),
+                  _vm._v(" "),
+                  _c("h4", [_vm._v("Giáo viên")]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Có căn cứ để hoàn thiện kĩ năng giảng dạy")])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("div", { staticClass: "ahihi" }, [
+                  _c("img", { attrs: { src: "/3.png", alt: "", srcset: "" } }),
+                  _vm._v(" "),
+                  _c("h4", [_vm._v("Trung tâm")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v("Có căn cứ để hoàn thiện"),
+                    _c("br"),
+                    _vm._v(
+                      "chương trình đào tạo giúp cải thiện chất lượng\n                        "
+                    )
+                  ])
                 ])
               ])
             ])
@@ -50868,6 +50870,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'app-header',
@@ -51231,37 +51242,53 @@ var render = function() {
                             )
                           ]
                         : [
-                            _c(
-                              "li",
-                              [
-                                _c(
-                                  "router-link",
-                                  { attrs: { to: { name: "register" } } },
-                                  [_vm._v("Trang cá nhân")]
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
                             _c("li", [
                               _c(
                                 "a",
                                 {
-                                  staticClass: "dropdown-item",
-                                  attrs: { href: "#!" },
-                                  on: {
-                                    click: function($event) {
-                                      $event.preventDefault()
-                                      return _vm.logout($event)
-                                    }
+                                  staticClass: "dropdown-toggle",
+                                  staticStyle: { cursor: "pointer" },
+                                  attrs: {
+                                    type: "button",
+                                    "data-toggle": "dropdown"
                                   }
                                 },
-                                [_vm._v("Logout")]
-                              )
+                                [
+                                  _vm._v(
+                                    _vm._s(_vm.currentUser.name) +
+                                      "\n                                      "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("ul", { staticClass: "dropdown-menu" }, [
+                                _vm._m(5),
+                                _vm._v(" "),
+                                _vm._m(6),
+                                _vm._v(" "),
+                                _vm._m(7),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "dropdown-item",
+                                      attrs: { href: "#" },
+                                      on: {
+                                        click: function($event) {
+                                          $event.preventDefault()
+                                          return _vm.logout($event)
+                                        }
+                                      }
+                                    },
+                                    [_vm._v("Đăng xuất")]
+                                  )
+                                ])
+                              ])
                             ])
                           ],
                       _vm._v(" "),
-                      _vm._m(5)
+                      _vm._m(8)
                     ],
                     2
                   )
@@ -51337,6 +51364,36 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("li", [
       _c("a", { attrs: { href: "#" } }, [_vm._v("Viết đánh giá")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+        _vm._v("Trang cá nhân")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+        _vm._v("Tất cả đánh giá")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+        _vm._v("Logout")
+      ])
     ])
   },
   function() {
