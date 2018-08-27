@@ -8,7 +8,7 @@ export default {
         isLoggedIn: !!user,
         loading: false,
         auth_error: null,
-        users: []
+        reviews: []
     },
     getters: {
         isLoading(state) {
@@ -23,8 +23,8 @@ export default {
         authError(state) {
             return state.auth_error;
         },
-        users(state) {
-            return state.users;
+        reviews(state) {
+            return state.reviews;
         }
     },
     mutations: {
@@ -57,5 +57,11 @@ export default {
         login(context) {
             context.commit("login");
         },
+        getReviewsLaest(context) {
+            axios.get('/api/reviews/laest')
+                .then((response) => {
+                    context.commit('updateReviewsLaest', response.data.reviews);
+                })
+        }
     }
 };

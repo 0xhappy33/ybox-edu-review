@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\API;
 use App\Review;
-use App\Http\Resources\ReviewResource;
+use Illuminate\Support\Facades\DB;
+use App\Http\Resources\Review as ResourceCollection;
+use App\Http\Resources\ReviewResource as ReviewResources;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,9 +17,9 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        return new ReviewResource(
-            Review::all()
-        );
+        $reviews = Review::paginate(15);
+		//Return collection of reviews as a resourse
+		return new ResourceCollection($reviews);
     }
 
     /**
@@ -49,7 +51,12 @@ class ReviewController extends Controller
      */
     public function show($id)
     {
-        return new ReviewResource(Review::find($id));
+        // return new ReviewResource(Review::find($id));
+        // ReviewResources::withoutWrapping();
+        //if added in App\Providers\AppServiceProvider::boot(), it will apply globally
+        $review = Review::where('id', $id)->take(1)->get();
+        // var_dump($review);
+		return new ReviewResources($review);
     }
 
     /**
@@ -60,7 +67,7 @@ class ReviewController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -84,5 +91,17 @@ class ReviewController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function ReviewsLaest(){
+        // $reviews = DB::table('reviews')->get();
+        // return new ReviewResources(Review::all());
+        // return response()->json([
+        //     "reviews" => $reviews
+        // ], 200);
+        //Get reviews
+		$reviews = Review::paginate(10);
+		//Return collection of reviews as a resourse
+		return new ResourceCollection($reviews);
     }
 }

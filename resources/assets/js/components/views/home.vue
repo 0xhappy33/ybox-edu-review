@@ -350,6 +350,12 @@
     </section>
 </div>
 </template>
+<script>
+export default {
+    
+}
+</script>
+
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 #home{
