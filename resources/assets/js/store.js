@@ -24,7 +24,7 @@ export default {
             return state.auth_error;
         },
         reviews(state) {
-            return state.reviews;
+            return state.data.reviews;
         }
     },
     mutations: {
@@ -49,18 +49,19 @@ export default {
             state.isLoggedIn = false;
             state.currentUser = null;
         },
-        updateUsers(state, payload) {
-            state.users = payload;
+        updateReviews(state, payload) {
+            state.data.reviews = payload;
         }
+
     },
     actions: {
         login(context) {
             context.commit("login");
         },
-        getReviewsLaest(context) {
-            axios.get('/api/reviews/laest')
+        getReviews(context) {
+            axios.get('http://127.0.0.1:8000/api/reviews/laest')
                 .then((response) => {
-                    context.commit('updateReviewsLaest', response.data.reviews);
+                    context.commit('updateReviews', response.data.data.reviews);
                 })
         }
     }

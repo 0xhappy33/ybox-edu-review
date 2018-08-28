@@ -25,7 +25,50 @@
                 <div class="row" style="margin-left: 15px; margin-right: 0; margin-bottom: 15px;">
                     <span style="color: #fff;">Đánh giá gần đây</span>
                 </div>
-                <div class="col-md-3 col-xs-12 col-sm-4">
+                <!-- <div class="col-md-3 col-xs-12 col-sm-4">
+                    <div class="card-rating">
+                        <div class="card-header">
+                            <img src="/avt.jpg" class="profile-image" alt="">
+                            <div class="rating-star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="card-auth">
+                            <a href="#">Nguyễn Văn Hà</a> đã đánh giá
+                            <a href="#">Quang Tuấn</a>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                a type specimen book. </p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div v-for="review in reviews" :key="review.id" class="col-md-3 col-xs-12 col-sm-4">
+                    <div class="card-rating">
+                        <div class="card-header">
+                            <img src="/avt.jpg" class="profile-image" alt="">
+                            <div class="rating-star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="card-auth">
+                            <a href="#"> {{ review.user_id }} </a> đã đánh giá
+                            <a href="#"> {{ review.teacher_id }} </a>
+                        </div>
+                        <div class="card-body">
+                            <p>{{ review.description  }}</p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-3 col-xs-12 col-sm-4">
                     <div class="card-rating">
                         <div class="card-header">
                             <img src="/avt.jpg" class="profile-image" alt="">
@@ -156,51 +199,9 @@
                                 a type specimen book. </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-xs-12 col-sm-4">
-                    <div class="card-rating">
-                        <div class="card-header">
-                            <img src="/avt.jpg" class="profile-image" alt="">
-                            <div class="rating-star">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </div>
-                        <div class="card-auth">
-                            <a href="#">Nguyễn Văn Hà</a> đã đánh giá
-                            <a href="#">Quang Tuấn</a>
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                a type specimen book. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-12 col-sm-4">
-                    <div class="card-rating">
-                        <div class="card-header">
-                            <img src="/avt.jpg" class="profile-image" alt="">
-                            <div class="rating-star">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </div>
-                        <div class="card-auth">
-                            <a href="#">Nguyễn Văn Hà</a> đã đánh giá
-                            <a href="#">Quang Tuấn</a>
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                                a type specimen book. </p>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
+
+            <review v-for="review in reviews" :review="review" :key="review.id"></review>
             </div>
             <div class="row">
                 <section>
@@ -351,9 +352,22 @@
 </div>
 </template>
 <script>
-export default {
-    
-}
+import Review from './cardReview.vue';
+	export default {
+		
+		components: { Review },
+
+		data () {
+			return {
+				reviews: []
+			}
+		},
+		mounted () {
+			axios.get('http://127.0.0.1:8000/api/reviews/laest').then((response) => {
+		this.reviews = response.data.data.reviews
+  })
+		}
+	}
 </script>
 
 <style scoped>

@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Resources;
-
+use App\User;
+use App\Http\Resources\UserResource;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
 class Review extends ResourceCollection
@@ -16,10 +17,15 @@ class Review extends ResourceCollection
     {
         
     	return [
-			'data' => $this->collection,
-			'links' => [
-				'self' => 'link-value',
-			],
+            
+            'reviews' => $this->collection,
+            'relationships' => [
+                // 'teacher' => Teacher::collection($this->teacher),User::find($this->user_id)
+                'user' => new UserResource($this->whenLoaded('user')),
+            ]
+			// 'links' => [
+			// 	'self' => 'link-value',
+			// ],
 		];
     }
 }

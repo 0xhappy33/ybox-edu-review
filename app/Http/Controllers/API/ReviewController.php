@@ -100,7 +100,9 @@ class ReviewController extends Controller
         //     "reviews" => $reviews
         // ], 200);
         //Get reviews
-		$reviews = Review::paginate(10);
+        $reviews = Review::orderBy('created_at', 'desc')->take(8)->get();
+        $reviews->load('user');
+        // $reviews = Review::with('user_id', 'teacher_id')->orderBy('created_at', 'desc')->take(8)->get();
 		//Return collection of reviews as a resourse
 		return new ResourceCollection($reviews);
     }

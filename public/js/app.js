@@ -1495,8 +1495,8 @@ module.exports = function() {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(17);
-__webpack_require__(80);
-module.exports = __webpack_require__(81);
+__webpack_require__(86);
+module.exports = __webpack_require__(87);
 
 
 /***/ }),
@@ -1512,9 +1512,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_App__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_App___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_App__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__routes_index_js__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__store__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__store__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__helpers_general__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue_headful__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue_headful__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue_headful___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_vue_headful__);
 __webpack_require__(18);
 
@@ -47464,7 +47464,7 @@ var content = __webpack_require__(50);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("09575ddd", content, false, {});
+var update = __webpack_require__(4)("63a2f5b0", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -47488,7 +47488,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n@media (min-width: 768px)\n{\n.navbar-nav[data-v-9e90f588] {\n    float: right;\n    margin: 0;\n}\n}\n@media (max-width: 1200px) {\n.gv[data-v-9e90f588]{\n        display: none;\n}\n}\n.pages .navbar[data-v-9e90f588] {\n     -webkit-box-shadow:  0 0 2px #ccc;\n             box-shadow:  0 0 2px #ccc;\n     /* background-color: rgba(0, 0, 0, 0.2); */\n}\n.gv[data-v-9e90f588]{\n    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;\n    border: 2px solid #12cd6a;\n    border-radius: 26px;\n    color: #232323;\n    font-family: Roboto;\n    font-size: 13px;\n    margin-right: 0;\n    padding: 12px 30px;\n    width: auto;\n}\n\n", ""]);
+exports.push([module.i, "\n@media (min-width: 768px)\r\n{\n.navbar-nav[data-v-9e90f588] {\r\n    float: right;\r\n    margin: 0;\n}\n}\n@media (max-width: 1200px) {\n.gv[data-v-9e90f588]{\r\n        display: none;\n}\n}\n.pages .navbar[data-v-9e90f588] {\r\n     -webkit-box-shadow:  0 0 2px #ccc;\r\n             box-shadow:  0 0 2px #ccc;\r\n     /* background-color: rgba(0, 0, 0, 0.2); */\n}\n.gv[data-v-9e90f588]{\r\n    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;\r\n    border: 2px solid #12cd6a;\r\n    border-radius: 26px;\r\n    color: #232323;\r\n    font-family: Roboto;\r\n    font-size: 13px;\r\n    margin-right: 0;\r\n    padding: 12px 30px;\r\n    width: auto;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -48164,7 +48164,7 @@ if (false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_views_auth_register_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_views_auth_register_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_views_home__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_views_home___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_views_home__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_404__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_404__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_404___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_404__);
 
 
@@ -48247,7 +48247,7 @@ var content = __webpack_require__(61);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("55990323", content, false, {});
+var update = __webpack_require__(4)("2587c13a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -48271,7 +48271,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.error[data-v-ff8511cc] {\n    text-align: center;\n    color: red;\n}\n", ""]);
+exports.push([module.i, "\n.error[data-v-ff8511cc] {\r\n    text-align: center;\r\n    color: red;\n}\r\n", ""]);
 
 // exports
 
@@ -48465,9 +48465,9 @@ var render = function() {
                                   ? _c("div", { staticClass: "form-group" }, [
                                       _c("p", { staticClass: "error" }, [
                                         _vm._v(
-                                          "\n                                            " +
+                                          "\r\n                                            " +
                                             _vm._s(_vm.authError) +
-                                            "\n                                        "
+                                            "\r\n                                        "
                                         )
                                       ])
                                     ])
@@ -50294,7 +50294,7 @@ var render = function() {
                                         _vm._v(
                                           " " +
                                             _vm._s(fieldsError.join("\n")) +
-                                            "\n                                        "
+                                            "\r\n                                        "
                                         )
                                       ])
                                     })
@@ -50409,9 +50409,9 @@ function injectStyle (ssrContext) {
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = null
+var __vue_script__ = __webpack_require__(71)
 /* template */
-var __vue_template__ = __webpack_require__(71)
+var __vue_template__ = __webpack_require__(77)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -50460,7 +50460,7 @@ var content = __webpack_require__(70);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("f12d0b9c", content, false, {});
+var update = __webpack_require__(4)("24db5c82", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -50484,13 +50484,579 @@ exports = module.exports = __webpack_require__(3)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Noto+Sans);", ""]);
 
 // module
-exports.push([module.i, "\n#home[data-v-1ed81137]{\n font-family: 'Noto Sans', sans-serif;\n font-size: 15px;\n background: #fff;\n}\n.search-main[data-v-1ed81137] {\n    border: 1px solid #000;\n    margin-top: 15%;\n    margin-bottom: 15%;\n    padding-top: 2%;\n    padding-bottom: 5%;\n    background: rgba(0, 0, 0, 0.5);\n}\n.search-main>.title[data-v-1ed81137] {\n    color: #ffffff;\n    margin-bottom: 5%;\n}\n.bg-main[data-v-1ed81137] {\n    background: url('/ahi.jpg') center;\n    background-size: cover;\n}\n.form-search[data-v-1ed81137] {\n    width: 50%;\n    height: 40px;\n    border-radius: 5px;\n    border: none;\n}\n.form-submit[data-v-1ed81137] {\n    height: 40px;\n    width: 40px;\n    background: #12cd6a;\n    color: #fff;\n    border: none;\n}\n.checked[data-v-1ed81137] {\n    color: orange;\n}\n.card-header[data-v-1ed81137] {\n    display: table;\n    margin-bottom: 10px;\n}\n.card-auth[data-v-1ed81137] {\n    margin-bottom: 10px;\n}\nimg.profile-image[data-v-1ed81137] {\n    display: table-cell;\n    height: 40px;\n    width: 40px;\n    border-radius: 50%;\n}\n.rating-star[data-v-1ed81137] {\n    display: table-cell;\n    vertical-align: middle;\n    padding-left: 20px;\n}\n.card-body>p[data-v-1ed81137] {\n    text-align: justify;\n    font-size: 14px;\n}\n.recent-review[data-v-1ed81137] {\n    margin-top: -10%;\n}\n.card-rating[data-v-1ed81137] {\n    background: #f2f4f5;\n    padding: 15px;\n    margin-bottom: 15px;\n    border-radius: 1%;\n    -webkit-transition: ease 0.3s;\n    /* Safari */\n    transition: ease 0.3s;\n}\n.card-rating[data-v-1ed81137]:hover {\n    -webkit-transform: scale(1.05);\n            transform: scale(1.05);\n    -webkit-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, .5);\n            box-shadow: 0 3px 25px 0 rgba(0, 0, 0, .5);\n}\n.carousel-caption>.card-rating[data-v-1ed81137] {\n    background: #12cd6a;\n}\n.carousel-caption[data-v-1ed81137] {\n    text-align: left\n}\n.carousel-caption a[data-v-1ed81137] {\n    color: #000;\n}\n.title-car[data-v-1ed81137] {\n    margin: 50px;\n}\n.title-car>h2[data-v-1ed81137] {\n    font-size: 3.875rem;\n    line-height: 3.75rem;\n    font-weight: 700;\n}\n.edm[data-v-1ed81137] {\n    text-align: center;\n    background-color: #F8F8ED;\n    margin-top: 5%;\n}\n", ""]);
+exports.push([module.i, "\n#home[data-v-1ed81137]{\r\n font-family: 'Noto Sans', sans-serif;\r\n font-size: 15px;\r\n background: #fff;\n}\n.search-main[data-v-1ed81137] {\r\n    border: 1px solid #000;\r\n    margin-top: 15%;\r\n    margin-bottom: 15%;\r\n    padding-top: 2%;\r\n    padding-bottom: 5%;\r\n    background: rgba(0, 0, 0, 0.5);\n}\n.search-main>.title[data-v-1ed81137] {\r\n    color: #ffffff;\r\n    margin-bottom: 5%;\n}\n.bg-main[data-v-1ed81137] {\r\n    background: url('/ahi.jpg') center;\r\n    background-size: cover;\n}\n.form-search[data-v-1ed81137] {\r\n    width: 50%;\r\n    height: 40px;\r\n    border-radius: 5px;\r\n    border: none;\n}\n.form-submit[data-v-1ed81137] {\r\n    height: 40px;\r\n    width: 40px;\r\n    background: #12cd6a;\r\n    color: #fff;\r\n    border: none;\n}\n.checked[data-v-1ed81137] {\r\n    color: orange;\n}\n.card-header[data-v-1ed81137] {\r\n    display: table;\r\n    margin-bottom: 10px;\n}\n.card-auth[data-v-1ed81137] {\r\n    margin-bottom: 10px;\n}\nimg.profile-image[data-v-1ed81137] {\r\n    display: table-cell;\r\n    height: 40px;\r\n    width: 40px;\r\n    border-radius: 50%;\n}\n.rating-star[data-v-1ed81137] {\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    padding-left: 20px;\n}\n.card-body>p[data-v-1ed81137] {\r\n    text-align: justify;\r\n    font-size: 14px;\n}\n.recent-review[data-v-1ed81137] {\r\n    margin-top: -10%;\n}\n.card-rating[data-v-1ed81137] {\r\n    background: #f2f4f5;\r\n    padding: 15px;\r\n    margin-bottom: 15px;\r\n    border-radius: 1%;\r\n    -webkit-transition: ease 0.3s;\r\n    /* Safari */\r\n    transition: ease 0.3s;\n}\n.card-rating[data-v-1ed81137]:hover {\r\n    -webkit-transform: scale(1.05);\r\n            transform: scale(1.05);\r\n    -webkit-box-shadow: 0 3px 25px 0 rgba(0, 0, 0, .5);\r\n            box-shadow: 0 3px 25px 0 rgba(0, 0, 0, .5);\n}\n.carousel-caption>.card-rating[data-v-1ed81137] {\r\n    background: #12cd6a;\n}\n.carousel-caption[data-v-1ed81137] {\r\n    text-align: left\n}\n.carousel-caption a[data-v-1ed81137] {\r\n    color: #000;\n}\n.title-car[data-v-1ed81137] {\r\n    margin: 50px;\n}\n.title-car>h2[data-v-1ed81137] {\r\n    font-size: 3.875rem;\r\n    line-height: 3.75rem;\r\n    font-weight: 700;\n}\n.edm[data-v-1ed81137] {\r\n    text-align: center;\r\n    background-color: #F8F8ED;\r\n    margin-top: 5%;\n}\r\n", ""]);
 
 // exports
 
 
 /***/ }),
 /* 71 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cardReview_vue__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cardReview_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__cardReview_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+	components: { Review: __WEBPACK_IMPORTED_MODULE_0__cardReview_vue___default.a },
+
+	data: function data() {
+		return {
+			reviews: []
+		};
+	},
+	mounted: function mounted() {
+		var _this = this;
+
+		axios.get('http://127.0.0.1:8000/api/reviews/laest').then(function (response) {
+			_this.reviews = response.data.data.reviews;
+		});
+	}
+});
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(73)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(75)
+/* template */
+var __vue_template__ = __webpack_require__(76)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-5cdbfb40"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/views/cardReview.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5cdbfb40", Component.options)
+  } else {
+    hotAPI.reload("data-v-5cdbfb40", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(74);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("36997ea9", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5cdbfb40\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./cardReview.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5cdbfb40\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./cardReview.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.checked[data-v-5cdbfb40] {\r\n    color: orange;\n}\n.card-header[data-v-5cdbfb40] {\r\n    display: table;\r\n    margin-bottom: 10px;\n}\n.card-auth[data-v-5cdbfb40] {\r\n    margin-bottom: 10px;\n}\nimg.profile-image[data-v-5cdbfb40] {\r\n    display: table-cell;\r\n    height: 40px;\r\n    width: 40px;\r\n    border-radius: 50%;\n}\n.rating-star[data-v-5cdbfb40] {\r\n    display: table-cell;\r\n    vertical-align: middle;\r\n    padding-left: 20px;\n}\n.card-body>p[data-v-5cdbfb40] {\r\n    text-align: justify;\r\n    font-size: 14px;\n}\n.recent-review[data-v-5cdbfb40] {\r\n    margin-top: -10%;\n}\n.card-rating[data-v-5cdbfb40] {\r\n    background: #f2f4f5;\r\n    padding: 15px;\r\n    margin-bottom: 15px;\r\n    border-radius: 1%;\r\n    -webkit-transition: ease 0.3s;\r\n    /* Safari */\r\n    transition: ease 0.3s;\n}\r\n\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 75 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['review']
+});
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
+    _c("div", { staticClass: "card-rating" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-auth" }, [
+        _c("a", { attrs: { href: "#" } }, [_vm._v(_vm._s(_vm.review.user_id))]),
+        _vm._v(" đã đánh giá\n            "),
+        _c("a", { attrs: { href: "#" } }, [
+          _vm._v(_vm._s(_vm.review.teacher_id))
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body" }, [
+        _c("p", [_vm._v(_vm._s(_vm.review.description))])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("img", {
+        staticClass: "profile-image",
+        attrs: { src: "/avt.jpg", alt: "" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "rating-star" }, [
+        _c("span", { staticClass: "fa fa-star checked" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "fa fa-star checked" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "fa fa-star checked" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "fa fa-star" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "fa fa-star" })
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-5cdbfb40", module.exports)
+  }
+}
+
+/***/ }),
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -50511,7 +51077,29 @@ var render = function() {
       _vm._v(" "),
       _vm._m(0),
       _vm._v(" "),
-      _vm._m(1)
+      _c("section", [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c(
+            "div",
+            { staticClass: "row recent-review" },
+            [
+              _vm._m(1),
+              _vm._v(" "),
+              _vm._l(_vm.reviews, function(review) {
+                return _c("review", {
+                  key: review.id,
+                  attrs: { review: review }
+                })
+              })
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _vm._m(2)
+        ]),
+        _vm._v(" "),
+        _vm._m(3)
+      ])
     ],
     1
   )
@@ -50560,607 +51148,302 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row recent-review" }, [
+    return _c(
+      "div",
+      {
+        staticClass: "row",
+        staticStyle: {
+          "margin-left": "15px",
+          "margin-right": "0",
+          "margin-bottom": "15px"
+        }
+      },
+      [
+        _c("span", { staticStyle: { color: "#fff" } }, [
+          _vm._v("Đánh giá gần đây")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("section", [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "text-center title-car" }, [
+            _c("p", [
+              _c("span", { staticStyle: { color: "#9192a7" } }, [
+                _vm._v("Chuyện của học viên")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("h2", [_vm._v("Mỗi đánh giá đều có một câu chuyện")])
+          ]),
+          _vm._v(" "),
           _c(
             "div",
             {
-              staticClass: "row",
-              staticStyle: {
-                "margin-left": "15px",
-                "margin-right": "0",
-                "margin-bottom": "15px"
-              }
+              staticClass: "carousel slide",
+              attrs: { id: "myCarousel", "data-ride": "carousel" }
             },
             [
-              _c("span", { staticStyle: { color: "#fff" } }, [
-                _vm._v("Đánh giá gần đây")
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
-            _c("div", { staticClass: "card-rating" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("img", {
-                  staticClass: "profile-image",
-                  attrs: { src: "/avt.jpg", alt: "" }
+              _c("ol", { staticClass: "carousel-indicators" }, [
+                _c("li", {
+                  staticClass: "active",
+                  attrs: { "data-target": "#myCarousel", "data-slide-to": "0" }
                 }),
                 _vm._v(" "),
-                _c("div", { staticClass: "rating-star" }, [
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-auth" }, [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
-                _vm._v(" đã đánh giá\n                            "),
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
-            _c("div", { staticClass: "card-rating" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("img", {
-                  staticClass: "profile-image",
-                  attrs: { src: "/avt.jpg", alt: "" }
+                _c("li", {
+                  attrs: { "data-target": "#myCarousel", "data-slide-to": "1" }
                 }),
                 _vm._v(" "),
-                _c("div", { staticClass: "rating-star" }, [
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" })
-                ])
+                _c("li", {
+                  attrs: { "data-target": "#myCarousel", "data-slide-to": "2" }
+                })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "card-auth" }, [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
-                _vm._v(" đã đánh giá\n                            "),
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
-            _c("div", { staticClass: "card-rating" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("img", {
-                  staticClass: "profile-image",
-                  attrs: { src: "/avt.jpg", alt: "" }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "rating-star" }, [
-                  _c("span", { staticClass: "fa fa-star checked" }),
+              _c("div", { staticClass: "carousel-inner" }, [
+                _c("div", { staticClass: "item active" }, [
+                  _c("img", {
+                    staticStyle: { width: "100%", height: "500px" },
+                    attrs: { src: "ahi.jpg", alt: "Los Angeles" }
+                  }),
                   _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-auth" }, [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
-                _vm._v(" đã đánh giá\n                            "),
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
-            _c("div", { staticClass: "card-rating" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("img", {
-                  staticClass: "profile-image",
-                  attrs: { src: "/avt.jpg", alt: "" }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "rating-star" }, [
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-auth" }, [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
-                _vm._v(" đã đánh giá\n                            "),
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
-            _c("div", { staticClass: "card-rating" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("img", {
-                  staticClass: "profile-image",
-                  attrs: { src: "/avt.jpg", alt: "" }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "rating-star" }, [
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-auth" }, [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
-                _vm._v(" đã đánh giá\n                            "),
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
-            _c("div", { staticClass: "card-rating" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("img", {
-                  staticClass: "profile-image",
-                  attrs: { src: "/avt.jpg", alt: "" }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "rating-star" }, [
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-auth" }, [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
-                _vm._v(" đã đánh giá\n                            "),
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
-            _c("div", { staticClass: "card-rating" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("img", {
-                  staticClass: "profile-image",
-                  attrs: { src: "/avt.jpg", alt: "" }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "rating-star" }, [
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-auth" }, [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
-                _vm._v(" đã đánh giá\n                            "),
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
-                  )
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3 col-xs-12 col-sm-4" }, [
-            _c("div", { staticClass: "card-rating" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("img", {
-                  staticClass: "profile-image",
-                  attrs: { src: "/avt.jpg", alt: "" }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "rating-star" }, [
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star checked" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "fa fa-star" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-auth" }, [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Nguyễn Văn Hà")]),
-                _vm._v(" đã đánh giá\n                            "),
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Quang Tuấn")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("p", [
-                  _vm._v(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make\n                                a type specimen book. "
-                  )
-                ])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c("section", [
-            _c("div", { staticClass: "container" }, [
-              _c("div", { staticClass: "text-center title-car" }, [
-                _c("p", [
-                  _c("span", { staticStyle: { color: "#9192a7" } }, [
-                    _vm._v("Chuyện của học viên")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("h2", [_vm._v("Mỗi đánh giá đều có một câu chuyện")])
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "carousel slide",
-                  attrs: { id: "myCarousel", "data-ride": "carousel" }
-                },
-                [
-                  _c("ol", { staticClass: "carousel-indicators" }, [
-                    _c("li", {
-                      staticClass: "active",
-                      attrs: {
-                        "data-target": "#myCarousel",
-                        "data-slide-to": "0"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("li", {
-                      attrs: {
-                        "data-target": "#myCarousel",
-                        "data-slide-to": "1"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("li", {
-                      attrs: {
-                        "data-target": "#myCarousel",
-                        "data-slide-to": "2"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "carousel-inner" }, [
-                    _c("div", { staticClass: "item active" }, [
-                      _c("img", {
-                        staticStyle: { width: "100%", height: "500px" },
-                        attrs: { src: "ahi.jpg", alt: "Los Angeles" }
-                      }),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "carousel-caption" }, [
-                        _c("div", { staticClass: "card-rating" }, [
-                          _c("div", { staticClass: "card-header" }, [
-                            _c("img", {
-                              staticClass: "profile-image",
-                              attrs: { src: "/avt.jpg", alt: "" }
-                            }),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "rating-star" }, [
-                              _c("span", { staticClass: "fa fa-star checked" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star checked" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star checked" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star" })
-                            ])
-                          ]),
+                  _c("div", { staticClass: "carousel-caption" }, [
+                    _c("div", { staticClass: "card-rating" }, [
+                      _c("div", { staticClass: "card-header" }, [
+                        _c("img", {
+                          staticClass: "profile-image",
+                          attrs: { src: "/avt.jpg", alt: "" }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "rating-star" }, [
+                          _c("span", { staticClass: "fa fa-star checked" }),
                           _vm._v(" "),
-                          _c("div", { staticClass: "card-auth" }, [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Nguyễn Văn Hà")
-                            ]),
-                            _vm._v(
-                              " đã đánh giá\n                                                "
-                            ),
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Quang Tuấn")
-                            ])
-                          ]),
+                          _c("span", { staticClass: "fa fa-star checked" }),
                           _vm._v(" "),
-                          _c("div", { staticClass: "card-body" }, [
-                            _c("p", [
-                              _vm._v(
-                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n                                                    scrambled it to make a type specimen book. "
-                              )
-                            ])
-                          ])
+                          _c("span", { staticClass: "fa fa-star checked" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "fa fa-star" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "fa fa-star" })
                         ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "item" }, [
-                      _c("img", {
-                        staticStyle: { width: "100%", height: "500px" },
-                        attrs: { src: "avt.jpg", alt: "Chicago" }
-                      }),
+                      ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "carousel-caption" }, [
-                        _c("div", { staticClass: "card-rating" }, [
-                          _c("div", { staticClass: "card-header" }, [
-                            _c("img", {
-                              staticClass: "profile-image",
-                              attrs: { src: "/avt.jpg", alt: "" }
-                            }),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "rating-star" }, [
-                              _c("span", { staticClass: "fa fa-star checked" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star checked" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star checked" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star" })
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "card-auth" }, [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Nguyễn Văn Hà")
-                            ]),
-                            _vm._v(
-                              " đã đánh giá\n                                                "
-                            ),
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Quang Tuấn")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "card-body" }, [
-                            _c("p", [
-                              _vm._v(
-                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n                                                    scrambled it to make a type specimen book. "
-                              )
-                            ])
-                          ])
+                      _c("div", { staticClass: "card-auth" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Nguyễn Văn Hà")
+                        ]),
+                        _vm._v(
+                          " đã đánh giá\n                                                "
+                        ),
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Quang Tuấn")
                         ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "item" }, [
-                      _c("img", {
-                        staticStyle: { width: "100%", height: "500px" },
-                        attrs: { src: "ahi.jpg", alt: "New York" }
-                      }),
+                      ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "carousel-caption" }, [
-                        _c("div", { staticClass: "card-rating" }, [
-                          _c("div", { staticClass: "card-header" }, [
-                            _c("img", {
-                              staticClass: "profile-image",
-                              attrs: { src: "/avt.jpg", alt: "" }
-                            }),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "rating-star" }, [
-                              _c("span", { staticClass: "fa fa-star checked" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star checked" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star checked" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star" }),
-                              _vm._v(" "),
-                              _c("span", { staticClass: "fa fa-star" })
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "card-auth" }, [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Nguyễn Văn Hà")
-                            ]),
-                            _vm._v(
-                              " đã đánh giá\n                                                "
-                            ),
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Quang Tuấn")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "card-body" }, [
-                            _c("p", [
-                              _vm._v(
-                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n                                                    scrambled it to make a type specimen book. "
-                              )
-                            ])
-                          ])
+                      _c("div", { staticClass: "card-body" }, [
+                        _c("p", [
+                          _vm._v(
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n                                                    scrambled it to make a type specimen book. "
+                          )
                         ])
                       ])
                     ])
-                  ]),
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "item" }, [
+                  _c("img", {
+                    staticStyle: { width: "100%", height: "500px" },
+                    attrs: { src: "avt.jpg", alt: "Chicago" }
+                  }),
                   _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "left carousel-control",
-                      attrs: { href: "#myCarousel", "data-slide": "prev" }
-                    },
-                    [
-                      _c("span", {
-                        staticClass: "glyphicon glyphicon-chevron-left"
-                      }),
+                  _c("div", { staticClass: "carousel-caption" }, [
+                    _c("div", { staticClass: "card-rating" }, [
+                      _c("div", { staticClass: "card-header" }, [
+                        _c("img", {
+                          staticClass: "profile-image",
+                          attrs: { src: "/avt.jpg", alt: "" }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "rating-star" }, [
+                          _c("span", { staticClass: "fa fa-star checked" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "fa fa-star checked" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "fa fa-star checked" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "fa fa-star" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "fa fa-star" })
+                        ])
+                      ]),
                       _vm._v(" "),
-                      _c("span", { staticClass: "sr-only" }, [
-                        _vm._v("Previous")
+                      _c("div", { staticClass: "card-auth" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Nguyễn Văn Hà")
+                        ]),
+                        _vm._v(
+                          " đã đánh giá\n                                                "
+                        ),
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Quang Tuấn")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "card-body" }, [
+                        _c("p", [
+                          _vm._v(
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n                                                    scrambled it to make a type specimen book. "
+                          )
+                        ])
                       ])
-                    ]
-                  ),
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "item" }, [
+                  _c("img", {
+                    staticStyle: { width: "100%", height: "500px" },
+                    attrs: { src: "ahi.jpg", alt: "New York" }
+                  }),
                   _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "right carousel-control",
-                      attrs: { href: "#myCarousel", "data-slide": "next" }
-                    },
-                    [
-                      _c("span", {
-                        staticClass: "glyphicon glyphicon-chevron-right"
-                      }),
+                  _c("div", { staticClass: "carousel-caption" }, [
+                    _c("div", { staticClass: "card-rating" }, [
+                      _c("div", { staticClass: "card-header" }, [
+                        _c("img", {
+                          staticClass: "profile-image",
+                          attrs: { src: "/avt.jpg", alt: "" }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "rating-star" }, [
+                          _c("span", { staticClass: "fa fa-star checked" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "fa fa-star checked" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "fa fa-star checked" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "fa fa-star" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "fa fa-star" })
+                        ])
+                      ]),
                       _vm._v(" "),
-                      _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
-                    ]
-                  )
+                      _c("div", { staticClass: "card-auth" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Nguyễn Văn Hà")
+                        ]),
+                        _vm._v(
+                          " đã đánh giá\n                                                "
+                        ),
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Quang Tuấn")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "card-body" }, [
+                        _c("p", [
+                          _vm._v(
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n                                                    scrambled it to make a type specimen book. "
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "left carousel-control",
+                  attrs: { href: "#myCarousel", "data-slide": "prev" }
+                },
+                [
+                  _c("span", {
+                    staticClass: "glyphicon glyphicon-chevron-left"
+                  }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "right carousel-control",
+                  attrs: { href: "#myCarousel", "data-slide": "next" }
+                },
+                [
+                  _c("span", {
+                    staticClass: "glyphicon glyphicon-chevron-right"
+                  }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
                 ]
               )
-            ])
-          ])
+            ]
+          )
         ])
-      ]),
-      _vm._v(" "),
-      _c("section", { staticClass: "edm container-fluid" }, [
-        _c("div", { staticClass: "container main-container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "h4",
-              {
-                staticStyle: {
-                  "text-align": "left",
-                  margin: "30px 0",
-                  "padding-left": "15px"
-                }
-              },
-              [_vm._v("Tại sao bạn nên chọn EDUDU ?")]
-            )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "edm container-fluid" }, [
+      _c("div", { staticClass: "container main-container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "h4",
+            {
+              staticStyle: {
+                "text-align": "left",
+                margin: "30px 0",
+                "padding-left": "15px"
+              }
+            },
+            [_vm._v("Tại sao bạn nên chọn EDUDU ?")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "ahihi" }, [
+              _c("img", { attrs: { src: "/1.png", alt: "", srcset: "" } }),
+              _vm._v(" "),
+              _c("h4", [_vm._v("Học viên")]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Được đánh giá giáo viên của họ")])
+            ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "ahihi" }, [
-                _c("img", { attrs: { src: "/1.png", alt: "", srcset: "" } }),
-                _vm._v(" "),
-                _c("h4", [_vm._v("Học viên")]),
-                _vm._v(" "),
-                _c("p", [_vm._v("Được đánh giá giáo viên của họ")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "ahihi" }, [
-                _c("img", { attrs: { src: "/2.png", alt: "", srcset: "" } }),
-                _vm._v(" "),
-                _c("h4", [_vm._v("Giáo viên")]),
-                _vm._v(" "),
-                _c("p", [_vm._v("Có căn cứ để hoàn thiện kĩ năng giảng dạy")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "ahihi" }, [
-                _c("img", { attrs: { src: "/3.png", alt: "", srcset: "" } }),
-                _vm._v(" "),
-                _c("h4", [_vm._v("Trung tâm")]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v("Có căn cứ để hoàn thiện"),
-                  _c("br"),
-                  _vm._v(
-                    "chương trình đào tạo giúp cải thiện chất lượng\n                        "
-                  )
-                ])
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "ahihi" }, [
+              _c("img", { attrs: { src: "/2.png", alt: "", srcset: "" } }),
+              _vm._v(" "),
+              _c("h4", [_vm._v("Giáo viên")]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Có căn cứ để hoàn thiện kĩ năng giảng dạy")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "ahihi" }, [
+              _c("img", { attrs: { src: "/3.png", alt: "", srcset: "" } }),
+              _vm._v(" "),
+              _c("h4", [_vm._v("Trung tâm")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("Có căn cứ để hoàn thiện"),
+                _c("br"),
+                _vm._v(
+                  "chương trình đào tạo giúp cải thiện chất lượng\n                        "
+                )
               ])
             ])
           ])
@@ -51179,19 +51462,19 @@ if (false) {
 }
 
 /***/ }),
-/* 72 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(73)
+  __webpack_require__(79)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(75)
+var __vue_script__ = __webpack_require__(81)
 /* template */
-var __vue_template__ = __webpack_require__(76)
+var __vue_template__ = __webpack_require__(82)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -51230,17 +51513,17 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 73 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(74);
+var content = __webpack_require__(80);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("3086eb23", content, false, {});
+var update = __webpack_require__(4)("2491c2c3", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -51256,7 +51539,7 @@ if(false) {
 }
 
 /***/ }),
-/* 74 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -51264,13 +51547,13 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.error-404[data-v-c1ac4c1e] {\n  margin: 0 auto;\n  text-align: center;\n  margin-top: 80px;\n}\n.error-404 .error-code[data-v-c1ac4c1e] {\n  bottom: 60%;\n  color: #4686CC;\n  font-size: 96px;\n  line-height: 100px;\n  font-weight: bold;\n}\n.error-404 .error-desc[data-v-c1ac4c1e] {\n  font-size: 12px;\n  color: #647788;\n}\n.error-404 .m-b-10[data-v-c1ac4c1e] {\n  margin-bottom: 10px!important;\n}\n.error-404 .m-b-20[data-v-c1ac4c1e] {\n  margin-bottom: 20px!important;\n}\n.error-404 .m-t-20[data-v-c1ac4c1e] {\n  margin-top: 20px!important;\n}\n\n", ""]);
+exports.push([module.i, "\n.error-404[data-v-c1ac4c1e] {\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  margin-top: 80px;\n}\n.error-404 .error-code[data-v-c1ac4c1e] {\r\n  bottom: 60%;\r\n  color: #4686CC;\r\n  font-size: 96px;\r\n  line-height: 100px;\r\n  font-weight: bold;\n}\n.error-404 .error-desc[data-v-c1ac4c1e] {\r\n  font-size: 12px;\r\n  color: #647788;\n}\n.error-404 .m-b-10[data-v-c1ac4c1e] {\r\n  margin-bottom: 10px!important;\n}\n.error-404 .m-b-20[data-v-c1ac4c1e] {\r\n  margin-bottom: 20px!important;\n}\n.error-404 .m-t-20[data-v-c1ac4c1e] {\r\n  margin-top: 20px!important;\n}\r\n\r\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 75 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51327,7 +51610,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 76 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -51343,11 +51626,11 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "error-desc" }, [
       _vm._v(
-        "\n       Xin lỗi, nhưng trang bạn đang tìm kiếm không tìm thấy hoặc không tồn tại."
+        "\r\n       Xin lỗi, nhưng trang bạn đang tìm kiếm không tìm thấy hoặc không tồn tại."
       ),
       _c("br"),
       _vm._v(
-        "\n       Hãy thử làm mới trang hoặc nhấp vào nút bên dưới để quay lại Trang chủ.\n        "
+        "\r\n       Hãy thử làm mới trang hoặc nhấp vào nút bên dưới để quay lại Trang chủ.\r\n        "
       ),
       _c(
         "div",
@@ -51389,7 +51672,7 @@ if (false) {
 }
 
 /***/ }),
-/* 77 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51404,7 +51687,7 @@ var user = Object(__WEBPACK_IMPORTED_MODULE_0__helpers_auth__["a" /* getLocalUse
         isLoggedIn: !!user,
         loading: false,
         auth_error: null,
-        users: []
+        reviews: []
     },
     getters: {
         isLoading: function isLoading(state) {
@@ -51419,8 +51702,8 @@ var user = Object(__WEBPACK_IMPORTED_MODULE_0__helpers_auth__["a" /* getLocalUse
         authError: function authError(state) {
             return state.auth_error;
         },
-        users: function users(state) {
-            return state.users;
+        reviews: function reviews(state) {
+            return state.data.reviews;
         }
     },
     mutations: {
@@ -51445,19 +51728,24 @@ var user = Object(__WEBPACK_IMPORTED_MODULE_0__helpers_auth__["a" /* getLocalUse
             state.isLoggedIn = false;
             state.currentUser = null;
         },
-        updateUsers: function updateUsers(state, payload) {
-            state.users = payload;
+        updateReviews: function updateReviews(state, payload) {
+            state.data.reviews = payload;
         }
     },
     actions: {
         login: function login(context) {
             context.commit("login");
+        },
+        getReviews: function getReviews(context) {
+            axios.get('http://127.0.0.1:8000/api/reviews/laest').then(function (response) {
+                context.commit('updateReviews', response.data.data.reviews);
+            });
         }
     }
 });
 
 /***/ }),
-/* 78 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51467,7 +51755,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _headful = __webpack_require__(79);
+var _headful = __webpack_require__(85);
 
 var _headful2 = _interopRequireDefault(_headful);
 
@@ -51499,7 +51787,7 @@ function getPassedProps(props) {
 }
 
 /***/ }),
-/* 79 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51637,13 +51925,13 @@ function isRemoveValue(val) {
 }
 
 /***/ }),
-/* 80 */
+/* 86 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 81 */
+/* 87 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
