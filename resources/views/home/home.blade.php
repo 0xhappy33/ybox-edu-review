@@ -1,8 +1,8 @@
 @extends('layouts.index')
 @section('title','Nền tảng đánh giá chất lượng giáo viên')
 
-@section('css')
-@endsection
+{{--@section('css')--}}
+{{--@endsection--}}
 
 @section('content')
 
@@ -17,7 +17,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8">
-
 						<h1 class="white-text">Bạn muốn tìm gì ?</h1>
 						<form action="#" method="post">
 							<input type="text" name="keyword" style="background: #FFFFFF;" placeholder="Gõ từ khóa mà bạn cần tìm kiếm...">

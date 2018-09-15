@@ -486,33 +486,6 @@ module.exports = function normalizeComponent (
 /* 2 */
 /***/ (function(module, exports) {
 
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
@@ -592,7 +565,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -817,6 +790,33 @@ function applyToTag (styleElement, obj) {
     styleElement.appendChild(document.createTextNode(css))
   }
 }
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
 
 
 /***/ }),
@@ -1495,8 +1495,8 @@ module.exports = function() {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(17);
-__webpack_require__(86);
-module.exports = __webpack_require__(87);
+__webpack_require__(91);
+module.exports = __webpack_require__(92);
 
 
 /***/ }),
@@ -1516,7 +1516,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__helpers_general__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue_headful__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_vue_headful___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_vue_headful__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_views_autocomplete_vue__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_views_autocomplete_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_views_autocomplete_vue__);
 __webpack_require__(18);
+
 
 
 
@@ -1529,6 +1532,8 @@ __webpack_require__(18);
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]);
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('vue-headful', __WEBPACK_IMPORTED_MODULE_7_vue_headful___default.a);
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('autocomplete', __WEBPACK_IMPORTED_MODULE_8__components_views_autocomplete_vue___default.a);
+
 var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store(__WEBPACK_IMPORTED_MODULE_5__store__["a" /* default */]);
 
 var router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
@@ -18718,7 +18723,7 @@ if (token) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(6)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4), __webpack_require__(6)(module)))
 
 /***/ }),
 /* 20 */
@@ -21259,7 +21264,7 @@ Popper.Defaults = Defaults;
 /* harmony default export */ __webpack_exports__["default"] = (Popper);
 //# sourceMappingURL=popper.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(4)))
 
 /***/ }),
 /* 21 */
@@ -43484,7 +43489,7 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(42).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4), __webpack_require__(42).setImmediate))
 
 /***/ }),
 /* 42 */
@@ -43554,7 +43559,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (typeof global !== "undefined" && global.clearImmediate) ||
                          (this && this.clearImmediate);
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
 /* 43 */
@@ -43747,7 +43752,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(8)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4), __webpack_require__(8)))
 
 /***/ }),
 /* 44 */
@@ -47464,7 +47469,7 @@ var content = __webpack_require__(50);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("63a2f5b0", content, false, {});
+var update = __webpack_require__(3)("63a2f5b0", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -47483,7 +47488,7 @@ if(false) {
 /* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(false);
+exports = module.exports = __webpack_require__(2)(false);
 // imports
 
 
@@ -48247,7 +48252,7 @@ var content = __webpack_require__(61);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("2587c13a", content, false, {});
+var update = __webpack_require__(3)("2587c13a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -48266,7 +48271,7 @@ if(false) {
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(false);
+exports = module.exports = __webpack_require__(2)(false);
 // imports
 
 
@@ -50460,7 +50465,7 @@ var content = __webpack_require__(70);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("24db5c82", content, false, {});
+var update = __webpack_require__(3)("24db5c82", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -50479,7 +50484,7 @@ if(false) {
 /* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(false);
+exports = module.exports = __webpack_require__(2)(false);
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Noto+Sans);", ""]);
 
@@ -50497,6 +50502,9 @@ exports.push([module.i, "\n#home[data-v-1ed81137]{\r\n font-family: 'Noto Sans',
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cardReview_vue__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cardReview_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__cardReview_vue__);
+//
+//
+//
 //
 //
 //
@@ -50932,7 +50940,7 @@ var content = __webpack_require__(74);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("36997ea9", content, false, {});
+var update = __webpack_require__(3)("36997ea9", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -50951,7 +50959,7 @@ if(false) {
 /* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(false);
+exports = module.exports = __webpack_require__(2)(false);
 // imports
 
 
@@ -51075,7 +51083,48 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _vm._m(0),
+      _c("div", { staticClass: "container-fluid bg-main" }, [
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-md-6 col-md-offset-3 text-center search-main" },
+            [
+              _c("h2", { staticClass: "title" }, [
+                _vm._v("Tìm kiếm giáo viên của bạn")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "search" }, [
+                _c("div", { staticClass: "search-container" }, [
+                  _c(
+                    "form",
+                    { attrs: { action: "" } },
+                    [
+                      _c("autocomplete", {
+                        attrs: {
+                          items: [
+                            "Apple",
+                            "Banana",
+                            "Orange",
+                            "Mango",
+                            "Pear",
+                            "Peach",
+                            "Grape",
+                            "Tangerine",
+                            "Pineapple"
+                          ]
+                        }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(0)
+                    ],
+                    1
+                  )
+                ])
+              ])
+            ]
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("section", [
         _c("div", { staticClass: "container-fluid" }, [
@@ -51109,40 +51158,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container-fluid bg-main" }, [
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-md-6 col-md-offset-3 text-center search-main" },
-          [
-            _c("h2", { staticClass: "title" }, [
-              _vm._v("Tìm kiếm giáo viên của bạn")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "search" }, [
-              _c("div", { staticClass: "search-container" }, [
-                _c("form", { attrs: { action: "" } }, [
-                  _c("input", {
-                    staticClass: "form-search",
-                    attrs: {
-                      type: "text",
-                      placeholder: "  Tìm kiếm....",
-                      name: "search"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    { staticClass: "form-submit", attrs: { type: "submit" } },
-                    [_c("i", { staticClass: "fa fa-search" })]
-                  )
-                ])
-              ])
-            ])
-          ]
-        )
-      ])
-    ])
+    return _c(
+      "button",
+      { staticClass: "form-submit", attrs: { type: "submit" } },
+      [_c("i", { staticClass: "fa fa-search" })]
+    )
   },
   function() {
     var _vm = this
@@ -51523,7 +51543,7 @@ var content = __webpack_require__(80);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("2491c2c3", content, false, {});
+var update = __webpack_require__(3)("2491c2c3", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -51542,7 +51562,7 @@ if(false) {
 /* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(false);
+exports = module.exports = __webpack_require__(2)(false);
 // imports
 
 
@@ -51926,12 +51946,369 @@ function isRemoveValue(val) {
 
 /***/ }),
 /* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(87)
+}
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(89)
+/* template */
+var __vue_template__ = __webpack_require__(90)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-5ad91fc0"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/views/autocomplete.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5ad91fc0", Component.options)
+  } else {
+    hotAPI.reload("data-v-5ad91fc0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(88);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("d6bfce70", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5ad91fc0\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./autocomplete.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5ad91fc0\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./autocomplete.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.autocomplete[data-v-5ad91fc0] {\n    position: relative;\n    width: 130px;\n}\n.autocomplete-results[data-v-5ad91fc0] {\n    padding: 0;\n    margin: 0;\n    border: 1px solid #eeeeee;\n    height: 120px;\n    overflow: auto;\n}\n.autocomplete-result[data-v-5ad91fc0] {\n    list-style: none;\n    text-align: left;\n    padding: 4px 2px;\n    cursor: pointer;\n}\n.autocomplete-result.is-active[data-v-5ad91fc0],\n.autocomplete-result[data-v-5ad91fc0]:hover {\n    background-color: #4AAE9B;\n    color: white;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 89 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "autocomplete",
+    data: function data() {
+        return {
+            isOpen: false,
+            results: [],
+            search: '',
+            isLoading: false,
+            arrowCounter: -1
+        };
+    },
+
+    props: {
+        items: {
+            type: Array,
+            required: false,
+            default: function _default() {
+                return [];
+            }
+        },
+        isAsync: {
+            type: Boolean,
+            required: false,
+            default: false
+        }
+    },
+    methods: {
+        onChange: function onChange() {
+            // Let's warn the parent that a change was made
+            this.$emit('input', this.search);
+            // Is the data given by an outside ajax request?
+            if (this.isAsync) {
+                this.isLoading = true;
+            } else {
+                this.filterResults();
+                this.isOpen = true;
+            }
+        },
+        filterResults: function filterResults() {
+            var _this = this;
+
+            this.results = this.items.filter(function (item) {
+                return item.toLowerCase().indexOf(_this.search.toLowerCase()) > -1;
+            });
+        },
+        setResult: function setResult(result) {
+            this.search = result;
+            this.isOpen = false;
+        },
+        onArrowDown: function onArrowDown() {
+            if (this.arrowCounter < this.results.length) {
+                this.arrowCounter = this.arrowCounter + 1;
+            }
+        },
+        onArrowUp: function onArrowUp() {
+            if (this.arrowCounter > 0) {
+                this.arrowCounter = this.arrowCounter - 1;
+            }
+        },
+        onEnter: function onEnter() {
+            this.search = this.results[this.arrowCounter];
+            this.isOpen = false;
+            this.arrowCounter = -1;
+        },
+        handleClickOutside: function handleClickOutside(evt) {
+            if (!this.$el.contains(evt.target)) {
+                this.isOpen = false;
+                this.arrowCounter = -1;
+            }
+        }
+    },
+    watch: {
+        // Once the items content changes, it means the parent component
+        // provided the needed data
+        items: function items(value, oldValue) {
+            if (this.isAsync) {
+                this.results = value;
+                this.isOpen = true;
+                this.isLoading = false;
+            }
+        }
+    },
+    mounted: function mounted() {
+        document.addEventListener('click', this.handleClickOutside);
+    },
+    destroyed: function destroyed() {
+        document.removeEventListener('click', this.handleClickOutside);
+    }
+});
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "autocomplete" }, [
+    _c("input", {
+      directives: [
+        {
+          name: "model",
+          rawName: "v-model",
+          value: _vm.search,
+          expression: "search"
+        }
+      ],
+      attrs: { type: "text", title: "" },
+      domProps: { value: _vm.search },
+      on: {
+        input: [
+          function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.search = $event.target.value
+          },
+          _vm.onChange
+        ],
+        keydown: [
+          function($event) {
+            if (
+              !("button" in $event) &&
+              _vm._k($event.keyCode, "down", 40, $event.key, [
+                "Down",
+                "ArrowDown"
+              ])
+            ) {
+              return null
+            }
+            return _vm.onArrowDown($event)
+          },
+          function($event) {
+            if (
+              !("button" in $event) &&
+              _vm._k($event.keyCode, "up", 38, $event.key, ["Up", "ArrowUp"])
+            ) {
+              return null
+            }
+            return _vm.onArrowUp($event)
+          },
+          function($event) {
+            if (
+              !("button" in $event) &&
+              _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+            ) {
+              return null
+            }
+            return _vm.onEnter($event)
+          }
+        ]
+      }
+    }),
+    _vm._v(" "),
+    _c(
+      "ul",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.isOpen,
+            expression: "isOpen"
+          }
+        ],
+        staticClass: "autocomplete-results"
+      },
+      [
+        _vm.isLoading
+          ? _c("li", { staticClass: "loading" }, [
+              _vm._v("\n            Loading results...\n        ")
+            ])
+          : _vm._e(),
+        _vm._v(" "),
+        _vm._l(_vm.results, function(result, i) {
+          return _c(
+            "li",
+            {
+              key: i,
+              staticClass: "autocomplete-result",
+              class: { "is-active": i === _vm.arrowCounter },
+              on: {
+                click: function($event) {
+                  _vm.setResult(result)
+                }
+              }
+            },
+            [_vm._v("\n            " + _vm._s(result) + "\n        ")]
+          )
+        })
+      ],
+      2
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-5ad91fc0", module.exports)
+  }
+}
+
+/***/ }),
+/* 91 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 87 */
+/* 92 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

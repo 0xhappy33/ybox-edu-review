@@ -34,3 +34,9 @@ Route::resource('organization', 'API\OrganizationController');
 Route::resource('teacher', 'API\TeacherController');
 Route::resource('review', 'API\ReviewController');
 Route::resource('user', 'API\UserController');
+// search API
+Route::get('/search',function(){
+    $query = Input::get('query');
+    $users = User::where('name','like','%'.$query.'%')->get();
+    return response()->json($users);
+});

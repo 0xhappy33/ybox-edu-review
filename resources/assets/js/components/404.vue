@@ -1,8 +1,7 @@
 <style scoped>
 .error-404 {
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 80px;
+    text-align: center;
+    margin: 80px auto 0;
 }
 .error-404 .error-code {
   bottom: 60%;

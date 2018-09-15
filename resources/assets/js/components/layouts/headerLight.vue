@@ -92,13 +92,11 @@
     border: 2px solid #12cd6a;
     border-radius: 26px;
     color: #232323;
-    font-family: Roboto;
+    font-family: Roboto,serif;
     font-size: 13px;
     margin-right: 0;
     padding: 12px 30px;
     width: auto;
-
-
  }
 
 </style>

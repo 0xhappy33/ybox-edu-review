@@ -7,11 +7,15 @@ import { routes } from './routes/index.js'
 import StoreData from './store';
 import { initialize } from './helpers/general';
 import vueHeadful from 'vue-headful';
+// import autocomplete from './components/views/autocomplete.vue';
+
 
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
 Vue.component('vue-headful', vueHeadful);
+// Vue.component('autocomplete', autocomplete);
+
 const store = new Vuex.Store(StoreData);
 
 const router = new VueRouter({
@@ -26,4 +30,4 @@ var vm = new Vue({
     store,
     el: '#app',
     render: h => h(App)
-})
+});
