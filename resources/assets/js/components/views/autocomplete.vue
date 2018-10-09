@@ -1,7 +1,9 @@
 <template>
-    <div class="autocomplete">
+    <div class="autocomplete inner-addon left-addon">
+        <i class="glyphicon glyphicon-search"></i>
         <input type="text"
-               class="search-input"
+               class="container search-input"
+               placeholder="Tìm kiếm giáo viên"
                title=""
                name="search"
                v-model="search"
@@ -10,6 +12,7 @@
                @keydown.up="onArrowUp"
                @keydown.enter="onEnter"
         >
+        <button type="submit" class="btn button-search">TÌM KIẾM</button>
         <ul v-show="isOpen" class="autocomplete-results">
             <li
                 class="loading"
@@ -29,6 +32,10 @@
 </template>
 
 <style scoped>
+    .autocomplete {
+        width: 100%;
+        text-align: center;
+    }
     .autocomplete-results {
         padding: 0;
         margin: 0;
@@ -49,16 +56,34 @@
         background-color: #4AAE9B;
         color: white;
     }
+    .inner-addon {
+        position: relative;
+    }
+    .inner-addon i {
+        position: absolute;
+        padding: 27px 0 27px 24px;
+        font-size: 15px;
+        line-height: 15px;
+        color: #eeeeee;
+        pointer-events: none;
+    }
     .search-input {
         font-weight: 700;
         color: #191919;
         width: 100%;
-        outline: none;
         border-radius: 3px;
-        background: #FFF;
+        background: #fff;
+        padding: 23px 72px 24px 48px;
         box-shadow: 1px 2px 5px -2px rgba(1,1,1,.1), 0 2px 7px 0 rgba(22,65,89,.03);
-        font-size: 1rem;
-        line-height: 1.5rem;
+    }
+    .button-search {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 14px;
+        font-size: 18px;
+        background-color: #00b67a;
+        color: #fff;
     }
 </style>
 

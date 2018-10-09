@@ -26,7 +26,8 @@ export const routes = [
         component: NotFound
     },
     {
-        path: '/itemresult',
-        component: ItemResult
+        path: '/search-result',
+        name: 'search-result',
+        component: SearchResult
     }
 ];

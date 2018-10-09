@@ -10,22 +10,16 @@
                     <h2 class="title">Tìm kiếm giáo viên của bạn</h2>
                     <div class="search">
                         <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-8">
+                            <div class="col-12 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
                                 <form class="card card-sm">
-                                    <div class="card-body row no-gutters align-items-center">
+                                    <div class="card-body row no-gutters">
                                         <div class="col-auto">
                                             <i class="fas fa-search h4 text-body"></i>
                                         </div>
                                         <!--end of col-->
                                         <div class="col">
-                                            <input class="form-control form-control-lg form-control-borderless"
-                                                   type="search" placeholder="Search topics or keywords">
+                                            <AutoCompleteSearch/>
                                         </div>
-                                        <!--end of col-->
-                                        <div class="col-auto">
-                                            <button class="btn btn-lg btn-success" type="submit">Search</button>
-                                        </div>
-                                        <!--end of col-->
                                     </div>
                                 </form>
                             </div>
@@ -379,10 +373,12 @@
 </template>
 <script>
     import Review from './cardReview.vue';
-    // import autocomplete from './autocomplete';
+    import AutoCompleteSearch from './autocomplete';
 
     export default {
-        components: {Review},
+        components: {
+            Review, AutoCompleteSearch
+        },
         data() {
             return {
                 reviews: []
@@ -406,17 +402,21 @@
     }
 
     .search-main {
-        border: 1px solid #000;
+        /*border: 1px solid #000;*/
         margin-top: 15%;
         margin-bottom: 15%;
         padding-top: 2%;
         padding-bottom: 5%;
-        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 2px 5px -2px rgba(1,1,1,.1),0 2px 7px 0 rgba(22,65,89,.03);
+        /*background: rgba(0, 0, 0, 0.5);*/
     }
 
     .search-main > .title {
-        color: #ffffff;
-        margin-bottom: 5%;
+        margin-bottom: 48px;
+        font-size: 2.875rem;
+        line-height: 3.75rem;
+        font-weight: 700;
+        color: #fff;
     }
 
     .search-form {
@@ -426,24 +426,24 @@
     }
 
     .bg-main {
-        background: url('/ahi.jpg') center;
+        background: url('/banner-home.jpg') center;
         background-size: cover;
     }
 
-    .form-search {
-        width: 50%;
-        height: 40px;
-        border-radius: 5px;
-        border: none;
-    }
+    /*.form-search {*/
+        /*width: 50%;*/
+        /*height: 40px;*/
+        /*border-radius: 5px;*/
+        /*border: none;*/
+    /*}*/
 
-    .form-submit {
-        height: 40px;
-        width: 40px;
-        background: #12cd6a;
-        color: #fff;
-        border: none;
-    }
+    /*.form-submit {*/
+        /*height: 40px;*/
+        /*width: 40px;*/
+        /*background: #12cd6a;*/
+        /*color: #fff;*/
+        /*border: none;*/
+    /*}*/
 
     .checked {
         color: orange;
